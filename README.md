@@ -23,4 +23,10 @@ ip address 10.1.1.2/24
 enable
 end
 """ 
+
+output = rtr1.run_commands("show int brief | inc Up")
+
+for line in output.split('\n'):
+ if re.search('1/1 .*Up', line):
+  print "etherne 1/1 is up"
 </pre>
