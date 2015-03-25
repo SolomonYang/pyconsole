@@ -10,20 +10,18 @@ pyconsole is a python library leveraging pexpect to provide simplified interface
  
 <b> Example </b>
 <pre>
-rtr1 = PyConsole(connection='telnet 10.18.20.103', 
- os='brocade', user='att', password='att', enable_password='att',)
-rtr2 = PyConsole(connection='telnet 10.18.20.104', 
- os='brocade', user='att', password='att', enable_password='att',)
-pc1 = PyConsole(connection='ssh -l super 10.17.138.102', 
+rtr1 = PyConsole(connection='telnet 10.1.1.1', 
+ os='brocade', user='user', password='lab', enable_password='lab',)
+rtr2 = PyConsole(connection='telnet 10.1.1.2', 
+ os='brocade', user='user', password='lab', enable_password='lab',)
+pc1 = PyConsole(connection='ssh -l super 10.2.1.1', 
  os='linux', user='root', password='PassWord')
 
-rtr1.run_commands("""
-config term
+rtr1.run_commands("""config term
 int eth 1/1
 ip address 10.1.1.2/24
 enable
-end
-""" 
+end""" 
 
 output = rtr1.run_commands("show int brief | inc Up")
 
