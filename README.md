@@ -15,7 +15,7 @@ pyconsole is a python library leveraging pexpect to provide simplified interface
 - Brocade FastIron 7.2h       telnet/ssh/console
 - Ubuntu  Ubuntu   14.0       ssh
 
-Please see the logs under LOG directory
+Please see the logs under TEST directory
 </pre>
  
 <b> Example </b>
