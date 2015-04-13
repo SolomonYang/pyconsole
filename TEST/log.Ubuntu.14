@@ -1,6 +1,6 @@
 
 
-super@10.17.138.102's password: 
+root@10.17.138.102's password: 
 Welcome to Ubuntu 14.04.1 LTS (GNU/Linux 3.13.0-45-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com/
@@ -9,12 +9,12 @@ Welcome to Ubuntu 14.04.1 LTS (GNU/Linux 3.13.0-45-generic x86_64)
 105 updates are security updates.
 
 Last login: Sun Apr 12 17:25:41 2015 from 10.17.138.102
-]0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$ 
-]0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$ 
-]0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$ uname -a
-Linux 2M24-44-UBUNTU 3.13.0-45-generic #74-Ubuntu SMP Tue Jan 13 19:36:28 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
-]0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$ 
-]0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$ 
+]0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$ 
+]0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$ 
+]0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$ uname -a
+Linux Rack-44-UBUNTU 3.13.0-45-generic #74-Ubuntu SMP Tue Jan 13 19:36:28 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+]0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$ 
+]0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$ 
 
 
 
@@ -24,28 +24,28 @@ Linux 2M24-44-UBUNTU 3.13.0-45-generic #74-Ubuntu SMP Tue Jan 13 19:36:28 UTC 20
 
 ______________________________________________________________________________________________________________________________
 LINE#0001: []
-LINE#0002: []0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$ uname -a]
-LINE#0003: [Linux 2M24-44-UBUNTU 3.13.0-45-generic #74-Ubuntu SMP Tue Jan 13 19:36:28 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux]
-LINE#0004: []0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$]
-LINE#0005: []0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$]
+LINE#0002: []0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$ uname -a]
+LINE#0003: [Linux Rack-44-UBUNTU 3.13.0-45-generic #74-Ubuntu SMP Tue Jan 13 19:36:28 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux]
+LINE#0004: []0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$]
+LINE#0005: []0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$]
 ______________________________________________________________________________________________________________________________
 
 
-]0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$ 
-]0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$ 
-]0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$ 
-]0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$ ls
+]0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$ 
+]0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$ 
+]0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$ 
+]0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$ ls
 3                  [0m[01;34mDesktop[0m    [01;34mDownloads[0m         [01;34mMusic[0m     [01;34mPublic[0m     [01;34mVideos[0m
 [01;34maws-python-sample[0m  [01;34mDocuments[0m  examples.desktop  [01;34mPictures[0m  [01;34mTemplates[0m  [01;34myangg[0m
-]0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$ 
-]0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$ ps
+]0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$ 
+]0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$ ps
   PID TTY          TIME CMD
 26103 pts/27   00:00:00 bash
 26119 pts/27   00:00:00 ps
-]0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$ 
-]0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$ 
-]0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$ 
-]0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$ 
+]0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$ 
+]0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$ 
+]0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$ 
+]0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$ 
 
 
 
@@ -55,32 +55,32 @@ ________________________________________________________________________________
 
 ________________________________________________________________________________________________________________________________________________________
 LINE#0001: []
-LINE#0002: []0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$]
-LINE#0003: []0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$]
-LINE#0004: []0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$]
-LINE#0005: []0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$ ls]
+LINE#0002: []0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$]
+LINE#0003: []0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$]
+LINE#0004: []0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$]
+LINE#0005: []0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$ ls]
 LINE#0006: [3                  [0m[01;34mDesktop[0m    [01;34mDownloads[0m         [01;34mMusic[0m     [01;34mPublic[0m     [01;34mVideos[0m]
 LINE#0007: [[01;34maws-python-sample[0m  [01;34mDocuments[0m  examples.desktop  [01;34mPictures[0m  [01;34mTemplates[0m  [01;34myangg[0m]
-LINE#0008: []0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$]
-LINE#0009: []0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$ ps]
+LINE#0008: []0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$]
+LINE#0009: []0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$ ps]
 LINE#0010: [  PID TTY          TIME CMD]
 LINE#0011: [26103 pts/27   00:00:00 bash]
 LINE#0012: [26119 pts/27   00:00:00 ps]
-LINE#0013: []0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$]
-LINE#0014: []0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$]
-LINE#0015: []0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$]
-LINE#0016: []0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$]
+LINE#0013: []0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$]
+LINE#0014: []0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$]
+LINE#0015: []0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$]
+LINE#0016: []0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$]
 ________________________________________________________________________________________________________________________________________________________
 
 
-]0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$ 
-]0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$ ps -ef | grep python
-super    22328 21135  0 15:27 pts/15   00:00:00 [01;31m[Kpython[m[K
-super    24576 19837  0 17:02 pts/9    00:00:03 [01;31m[Kpython[m[K ./att.test.ver2.py run 200
-super    26064 24969  2 17:26 pts/25   00:00:00 [01;31m[Kpython[m[K ./Ubuntu.14.py
-super    26121 26103  0 17:26 pts/27   00:00:00 grep --color=auto [01;31m[Kpython[m[K
-]0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$ 
-]0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$ 
+]0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$ 
+]0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$ ps -ef | grep python
+root    22328 21135  0 15:27 pts/15   00:00:00 [01;31m[Kpython[m[K
+root    24576 19837  0 17:02 pts/9    00:00:03 [01;31m[Kpython[m[K ./att.test.ver2.py run 200
+root    26064 24969  2 17:26 pts/25   00:00:00 [01;31m[Kpython[m[K ./Ubuntu.14.py
+root    26121 26103  0 17:26 pts/27   00:00:00 grep --color=auto [01;31m[Kpython[m[K
+]0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$ 
+]0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$ 
 
 
 
@@ -90,13 +90,13 @@ super    26121 26103  0 17:26 pts/27   00:00:00 grep --color=auto [01;31m[Kpyt
 
 _______________________________________________________________________________________________________________
 LINE#0001: []
-LINE#0002: []0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$]
-LINE#0003: []0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$ ps -ef | grep python]
-LINE#0004: [super    22328 21135  0 15:27 pts/15   00:00:00 [01;31m[Kpython[m[K]
-LINE#0005: [super    24576 19837  0 17:02 pts/9    00:00:03 [01;31m[Kpython[m[K ./att.test.ver2.py run 200]
-LINE#0006: [super    26064 24969  2 17:26 pts/25   00:00:00 [01;31m[Kpython[m[K ./Ubuntu.14.py]
-LINE#0007: [super    26121 26103  0 17:26 pts/27   00:00:00 grep --color=auto [01;31m[Kpython[m[K]
-LINE#0008: []0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$]
-LINE#0009: []0;super@2M24-44-UBUNTU: ~super@2M24-44-UBUNTU:~$]
+LINE#0002: []0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$]
+LINE#0003: []0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$ ps -ef | grep python]
+LINE#0004: [root    22328 21135  0 15:27 pts/15   00:00:00 [01;31m[Kpython[m[K]
+LINE#0005: [root    24576 19837  0 17:02 pts/9    00:00:03 [01;31m[Kpython[m[K ./att.test.ver2.py run 200]
+LINE#0006: [root    26064 24969  2 17:26 pts/25   00:00:00 [01;31m[Kpython[m[K ./Ubuntu.14.py]
+LINE#0007: [root    26121 26103  0 17:26 pts/27   00:00:00 grep --color=auto [01;31m[Kpython[m[K]
+LINE#0008: []0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$]
+LINE#0009: []0;root@Rack-44-UBUNTU: ~root@Rack-44-UBUNTU:~$]
 _______________________________________________________________________________________________________________
 
