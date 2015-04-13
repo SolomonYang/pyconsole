@@ -1,0 +1,834 @@
+
+/======================================\ 
+| Test brocade FastIron via ssh....... |
+\++++++++++++++++++++++++++++++++++++++/
+
+
+================================ATTENTION===================================
+*                                                                          *
+*                                                                          *
+*                        Static  Lab  Device  Info                         *
+*                                                                          *
+*                                                                          *
+*                 Vendor             : Brocade                             *
+*                 OS                 : FastIron 7.2                        *
+*                 Device             : FSX 800                             *
+*                 Location           : NA                                  *
+*                 Telnet             : On                                  *
+*                 Console            : On                                  *
+*                 SSH                : On                                  *
+*                 SNMP ro            : NA                                  *
+*                 SNMP wr            : NA                                  *
+*                                                                          *
+*                                                                          *
+*                                                                          *
+================================ATTENTION===================================
+
+
+admin@10.18.20.103's password: 
+SSH@SX1.solomon>enable
+No password has been assigned yet...
+SSH@SX1.solomon#terminal len 0
+
+Invalid input -> len 0
+Type ? for a list
+SSH@SX1.solomon#skip
+
+Disable page display mode
+SSH@SX1.solomon#
+
+SSH@SX1.solomon#show ver
+
+
+==========================================================================
+Active Management CPU [Slot-10]:
+  SW: Version 07.2.02fT3e3 Copyright (c) 1996-2010 Brocade Communications Systems, Inc.
+      Compiled on Feb 16 2012 at 20:48:44 labeled as SXR07202f
+      (4070551 bytes) Primary SXR07202f.bin
+      BootROM: Version 07.2.00T3e5 (FEv2)
+      Chassis Serial  #: B3FH11F062
+ 	 License: SX_V6_HW_ROUTER_IPv6_SOFT_PACKAGE   (LID: ejJFFOFFHL)
+  HW: Chassis FastIron SX 800-PREM6 (PROM-TYPE SX-FIL3U-6-IPV6)
+==========================================================================
+Standby Management CPU [Slot-9]:
+  SW: Version 07.2.02fT3e3 Copyright (c) 1996-2010 Brocade Communications Systems, Inc.
+      Compiled on Feb 16 2012 at 20:48:44 labeled as SXR07202f
+      BootROM: Version 07.2.00T3e5 (FEv2)
+  HW: Chassis FastIron SX 800-PREM6 (PROM-TYPE SX-FIL3U-6-IPV6)
+==========================================================================
+SL 1: SX-FI624C 24-port Gig Copper
+      Serial  #: W60402G03R
+      P-ASIC  0: type 0111, rev 00  subrev 01
+      P-ASIC  1: type 0111, rev 00  subrev 01
+==========================================================================
+SL 2: SX-FI624C 24-port Gig Copper
+      Serial  #: CH35090161
+      P-ASIC  2: type 0111, rev 00  subrev 01
+      P-ASIC  3: type 0111, rev 00  subrev 01
+==========================================================================
+SL 3: SX-FI624C 24-port Gig Copper
+      Serial  #: CH35090080
+      P-ASIC  4: type 0111, rev 00  subrev 01
+      P-ASIC  5: type 0111, rev 00  subrev 01
+==========================================================================
+SL 4: SX-FI624C 24-port Gig Copper
+      Serial  #: W60439F01M
+      P-ASIC  6: type 0111, rev 00  subrev 01
+      P-ASIC  7: type 0111, rev 00  subrev 01
+==========================================================================
+SL 5: SX-FI624C 24-port Gig Copper
+      Serial  #: W60414F001
+      P-ASIC  8: type 0111, rev 00  subrev 01
+      P-ASIC  9: type 0111, rev 00  subrev 01
+==========================================================================
+SL 6: SX-FI624C 24-port Gig Copper
+      Serial  #: CH29091677
+      P-ASIC 10: type 0111, rev 00  subrev 01
+      P-ASIC 11: type 0111, rev 00  subrev 01
+==========================================================================
+SL 7: SX-FI624C 24-port Gig Copper
+      Serial  #: CY43076382
+      P-ASIC 12: type 0111, rev 00  subrev 01
+      P-ASIC 13: type 0111, rev 00  subrev 01
+==========================================================================
+SL 8: SX-FI624HF 24-port 100/1000 Fiber
+      Serial  #: W80424F03A
+      P-ASIC 14: type 0111, rev 00  subrev 01
+      P-ASIC 15: type 0111, rev 00  subrev 01
+==========================================================================
+SL 9: SX-FI2XGMR6 2-port Management
+      Serial  #: W40444G03E
+ 	 License: SX_V6_HW_ROUTER_IPv6_SOFT_PACKAGE   (LID: yJFJJJiFIg)
+      P-ASIC 16: type 0151, rev 00  subrev 00
+      P-ASIC 17: type 0151, rev 00  subrev 00
+==========================================================================
+SL 10: SX-FI2XGMR6 2-port Management
+      Serial  #: CH40090026
+ 	 License: SX_V6_HW_ROUTER_IPv6_SOFT_PACKAGE   (LID: ejJFFOFFHL)
+      P-ASIC 18: type 0151, rev 00  subrev 00
+      P-ASIC 19: type 0151, rev 00  subrev 00
+==========================================================================
+Active Management Module:
+  660 MHz Power PC processor 8541 (version 32/0020) 66 MHz bus
+  512 KB boot flash memory
+16384 KB code flash memory
+  512 MB DRAM
+Standby Management Module:
+  660 MHz Power PC processor 8541 (version 32/0020) 66 MHz bus
+  512 KB boot flash memory
+16384 KB code flash memory
+  512 MB DRAM
+Monitor Option is on
+The system uptime is 6 days 1 hours 23 minutes 9 seconds 
+The system : started=warm start   reloaded=by "reload"
+
+SSH@SX1.solomon#
+____________________________________________________________________________________________________
+LINE#0001: []
+LINE#0002: []
+LINE#0003: [SSH@SX1.solomon#show ver]
+LINE#0004: []
+LINE#0005: []
+LINE#0006: [==========================================================================]
+LINE#0007: [Active Management CPU [Slot-10]:]
+LINE#0008: [  SW: Version 07.2.02fT3e3 Copyright (c) 1996-2010 Brocade Communications Systems, Inc.]
+LINE#0009: [      Compiled on Feb 16 2012 at 20:48:44 labeled as SXR07202f]
+LINE#0010: [      (4070551 bytes) Primary SXR07202f.bin]
+LINE#0011: [      BootROM: Version 07.2.00T3e5 (FEv2)]
+LINE#0012: [      Chassis Serial  #: B3FH11F062]
+LINE#0013: [ 	 License: SX_V6_HW_ROUTER_IPv6_SOFT_PACKAGE   (LID: ejJFFOFFHL)]
+LINE#0014: [  HW: Chassis FastIron SX 800-PREM6 (PROM-TYPE SX-FIL3U-6-IPV6)]
+LINE#0015: [==========================================================================]
+LINE#0016: [Standby Management CPU [Slot-9]:]
+LINE#0017: [  SW: Version 07.2.02fT3e3 Copyright (c) 1996-2010 Brocade Communications Systems, Inc.]
+LINE#0018: [      Compiled on Feb 16 2012 at 20:48:44 labeled as SXR07202f]
+LINE#0019: [      BootROM: Version 07.2.00T3e5 (FEv2)]
+LINE#0020: [  HW: Chassis FastIron SX 800-PREM6 (PROM-TYPE SX-FIL3U-6-IPV6)]
+LINE#0021: [==========================================================================]
+LINE#0022: [SL 1: SX-FI624C 24-port Gig Copper]
+LINE#0023: [      Serial  #: W60402G03R]
+LINE#0024: [      P-ASIC  0: type 0111, rev 00  subrev 01]
+LINE#0025: [      P-ASIC  1: type 0111, rev 00  subrev 01]
+LINE#0026: [==========================================================================]
+LINE#0027: [SL 2: SX-FI624C 24-port Gig Copper]
+LINE#0028: [      Serial  #: CH35090161]
+LINE#0029: [      P-ASIC  2: type 0111, rev 00  subrev 01]
+LINE#0030: [      P-ASIC  3: type 0111, rev 00  subrev 01]
+LINE#0031: [==========================================================================]
+LINE#0032: [SL 3: SX-FI624C 24-port Gig Copper]
+LINE#0033: [      Serial  #: CH35090080]
+LINE#0034: [      P-ASIC  4: type 0111, rev 00  subrev 01]
+LINE#0035: [      P-ASIC  5: type 0111, rev 00  subrev 01]
+LINE#0036: [==========================================================================]
+LINE#0037: [SL 4: SX-FI624C 24-port Gig Copper]
+LINE#0038: [      Serial  #: W60439F01M]
+LINE#0039: [      P-ASIC  6: type 0111, rev 00  subrev 01]
+LINE#0040: [      P-ASIC  7: type 0111, rev 00  subrev 01]
+LINE#0041: [==========================================================================]
+LINE#0042: [SL 5: SX-FI624C 24-port Gig Copper]
+LINE#0043: [      Serial  #: W60414F001]
+LINE#0044: [      P-ASIC  8: type 0111, rev 00  subrev 01]
+LINE#0045: [      P-ASIC  9: type 0111, rev 00  subrev 01]
+LINE#0046: [==========================================================================]
+LINE#0047: [SL 6: SX-FI624C 24-port Gig Copper]
+LINE#0048: [      Serial  #: CH29091677]
+LINE#0049: [      P-ASIC 10: type 0111, rev 00  subrev 01]
+LINE#0050: [      P-ASIC 11: type 0111, rev 00  subrev 01]
+LINE#0051: [==========================================================================]
+LINE#0052: [SL 7: SX-FI624C 24-port Gig Copper]
+LINE#0053: [      Serial  #: CY43076382]
+LINE#0054: [      P-ASIC 12: type 0111, rev 00  subrev 01]
+LINE#0055: [      P-ASIC 13: type 0111, rev 00  subrev 01]
+LINE#0056: [==========================================================================]
+LINE#0057: [SL 8: SX-FI624HF 24-port 100/1000 Fiber]
+LINE#0058: [      Serial  #: W80424F03A]
+LINE#0059: [      P-ASIC 14: type 0111, rev 00  subrev 01]
+LINE#0060: [      P-ASIC 15: type 0111, rev 00  subrev 01]
+LINE#0061: [==========================================================================]
+LINE#0062: [SL 9: SX-FI2XGMR6 2-port Management]
+LINE#0063: [      Serial  #: W40444G03E]
+LINE#0064: [ 	 License: SX_V6_HW_ROUTER_IPv6_SOFT_PACKAGE   (LID: yJFJJJiFIg)]
+LINE#0065: [      P-ASIC 16: type 0151, rev 00  subrev 00]
+LINE#0066: [      P-ASIC 17: type 0151, rev 00  subrev 00]
+LINE#0067: [==========================================================================]
+LINE#0068: [SL 10: SX-FI2XGMR6 2-port Management]
+LINE#0069: [      Serial  #: CH40090026]
+LINE#0070: [ 	 License: SX_V6_HW_ROUTER_IPv6_SOFT_PACKAGE   (LID: ejJFFOFFHL)]
+LINE#0071: [      P-ASIC 18: type 0151, rev 00  subrev 00]
+LINE#0072: [      P-ASIC 19: type 0151, rev 00  subrev 00]
+LINE#0073: [==========================================================================]
+LINE#0074: [Active Management Module:]
+LINE#0075: [  660 MHz Power PC processor 8541 (version 32/0020) 66 MHz bus]
+LINE#0076: [  512 KB boot flash memory]
+LINE#0077: [16384 KB code flash memory]
+LINE#0078: [  512 MB DRAM]
+LINE#0079: [Standby Management Module:]
+LINE#0080: [  660 MHz Power PC processor 8541 (version 32/0020) 66 MHz bus]
+LINE#0081: [  512 KB boot flash memory]
+LINE#0082: [16384 KB code flash memory]
+LINE#0083: [  512 MB DRAM]
+LINE#0084: [Monitor Option is on]
+LINE#0085: [The system uptime is 6 days 1 hours 23 minutes 9 seconds]
+LINE#0086: [The system : started=warm start   reloaded=by "reload"]
+LINE#0087: []
+LINE#0088: [SSH@SX1.solomon#]
+____________________________________________________________________________________________________
+
+
+
+SSH@SX1.solomon#
+
+SSH@SX1.solomon#! configure eth1/8 with ip and enable
+
+SSH@SX1.solomon#config term
+
+SSH@SX1.solomon(config)#int eth 1/8
+
+SSH@SX1.solomon(config-if-e1000-1/8)#ip address 192.168.1.1/24
+
+Invalid input -> address 192.168.1.1/24
+Type ? for a list
+SSH@SX1.solomon(config-if-e1000-1/8)#enable
+
+SSH@SX1.solomon(config-if-e1000-1/8)#end
+
+SSH@SX1.solomon#
+
+SSH@SX1.solomon#
+___________________________________________________________________________
+LINE#0001: []
+LINE#0002: []
+LINE#0003: [SSH@SX1.solomon#]
+LINE#0004: []
+LINE#0005: [SSH@SX1.solomon#! configure eth1/8 with ip and enable]
+LINE#0006: []
+LINE#0007: [SSH@SX1.solomon#config term]
+LINE#0008: []
+LINE#0009: [SSH@SX1.solomon(config)#int eth 1/8]
+LINE#0010: []
+LINE#0011: [SSH@SX1.solomon(config-if-e1000-1/8)#ip address 192.168.1.1/24]
+LINE#0012: []
+LINE#0013: [Invalid input -> address 192.168.1.1/24]
+LINE#0014: [Type ? for a list]
+LINE#0015: [SSH@SX1.solomon(config-if-e1000-1/8)#enable]
+LINE#0016: []
+LINE#0017: [SSH@SX1.solomon(config-if-e1000-1/8)#end]
+LINE#0018: []
+LINE#0019: [SSH@SX1.solomon#]
+LINE#0020: []
+LINE#0021: [SSH@SX1.solomon#]
+___________________________________________________________________________
+
+
+
+SSH@SX1.solomon#show int brief | inc Up
+
+1/11    Up      Forward Full 1G    None  No  166  0   0024.381e.6300  BRGMO11V
+1/12    Up      Forward Full 1G    None  No  166  0   0024.381e.6300  BGTMO301
+9/1     Up      Forward Full 10G   None  No  166  0   0024.381e.6300          
+9/2     Up      Forward Full 10G   514   Yes N/A  0   0024.381e.6300          
+10/2    Up      Forward Full 10G   514   Yes N/A  0   0024.381e.6300          
+mgmt1   Up      None    Full 1G    None  No  999  0   0024.381e.6300          
+ve2     Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300  07SX/08S
+ve83    Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300          
+ve160   Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300          
+ve166   Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300          
+ve179   Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300          
+lb1     Up      N/A     N/A  N/A   None  N/A N/A  N/A N/A                     
+SSH@SX1.solomon#
+
+SSH@SX1.solomon#
+___________________________________________________________________________________________
+LINE#0001: []
+LINE#0002: []
+LINE#0003: [SSH@SX1.solomon#show int brief | inc Up]
+LINE#0004: []
+LINE#0005: [1/11    Up      Forward Full 1G    None  No  166  0   0024.381e.6300  BRGMO11V]
+LINE#0006: [1/12    Up      Forward Full 1G    None  No  166  0   0024.381e.6300  BGTMO301]
+LINE#0007: [9/1     Up      Forward Full 10G   None  No  166  0   0024.381e.6300]
+LINE#0008: [9/2     Up      Forward Full 10G   514   Yes N/A  0   0024.381e.6300]
+LINE#0009: [10/2    Up      Forward Full 10G   514   Yes N/A  0   0024.381e.6300]
+LINE#0010: [mgmt1   Up      None    Full 1G    None  No  999  0   0024.381e.6300]
+LINE#0011: [ve2     Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300  07SX/08S]
+LINE#0012: [ve83    Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300]
+LINE#0013: [ve160   Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300]
+LINE#0014: [ve166   Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300]
+LINE#0015: [ve179   Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300]
+LINE#0016: [lb1     Up      N/A     N/A  N/A   None  N/A N/A  N/A N/A]
+LINE#0017: [SSH@SX1.solomon#]
+___________________________________________________________________________________________
+
+
+/======================================\ 
+| Test brocade FastIron via telnet.... |
+\++++++++++++++++++++++++++++++++++++++/
+Trying 10.18.20.103...
+Connected to 10.18.20.103.
+Escape character is '^]'.
+
+
+
+================================ATTENTION===================================
+*                                                                          *
+*                                                                          *
+*                        Static  Lab  Device  Info                         *
+*                                                                          *
+*                                                                          *
+*                 Vendor             : Brocade                             *
+*                 OS                 : FastIron 7.2                        *
+*                 Device             : FSX 800                             *
+*                 Location           : NA                                  *
+*                 Telnet             : On                                  *
+*                 Console            : On                                  *
+*                 SSH                : On                                  *
+*                 SNMP ro            : NA                                  *
+*                 SNMP wr            : NA                                  *
+*                                                                          *
+*                                                                          *
+*                                                                          *
+================================ATTENTION===================================
+
+
+telnet@SX1.solomon>
+telnet@SX1.solomon>
+telnet@SX1.solomon>enable
+No password has been assigned yet...
+telnet@SX1.solomon#terminal len 0
+Invalid input -> len 0
+Type ? for a list
+telnet@SX1.solomon#skip
+Disable page display mode
+telnet@SX1.solomon#
+telnet@SX1.solomon#show ver
+
+==========================================================================
+Active Management CPU [Slot-10]:
+  SW: Version 07.2.02fT3e3 Copyright (c) 1996-2010 Brocade Communications Systems, Inc.
+      Compiled on Feb 16 2012 at 20:48:44 labeled as SXR07202f
+      (4070551 bytes) Primary SXR07202f.bin
+      BootROM: Version 07.2.00T3e5 (FEv2)
+      Chassis Serial  #: B3FH11F062
+ 	 License: SX_V6_HW_ROUTER_IPv6_SOFT_PACKAGE   (LID: ejJFFOFFHL)
+  HW: Chassis FastIron SX 800-PREM6 (PROM-TYPE SX-FIL3U-6-IPV6)
+==========================================================================
+Standby Management CPU [Slot-9]:
+  SW: Version 07.2.02fT3e3 Copyright (c) 1996-2010 Brocade Communications Systems, Inc.
+      Compiled on Feb 16 2012 at 20:48:44 labeled as SXR07202f
+      BootROM: Version 07.2.00T3e5 (FEv2)
+  HW: Chassis FastIron SX 800-PREM6 (PROM-TYPE SX-FIL3U-6-IPV6)
+==========================================================================
+SL 1: SX-FI624C 24-port Gig Copper
+      Serial  #: W60402G03R
+      P-ASIC  0: type 0111, rev 00  subrev 01
+      P-ASIC  1: type 0111, rev 00  subrev 01
+==========================================================================
+SL 2: SX-FI624C 24-port Gig Copper
+      Serial  #: CH35090161
+      P-ASIC  2: type 0111, rev 00  subrev 01
+      P-ASIC  3: type 0111, rev 00  subrev 01
+==========================================================================
+SL 3: SX-FI624C 24-port Gig Copper
+      Serial  #: CH35090080
+      P-ASIC  4: type 0111, rev 00  subrev 01
+      P-ASIC  5: type 0111, rev 00  subrev 01
+==========================================================================
+SL 4: SX-FI624C 24-port Gig Copper
+      Serial  #: W60439F01M
+      P-ASIC  6: type 0111, rev 00  subrev 01
+      P-ASIC  7: type 0111, rev 00  subrev 01
+==========================================================================
+SL 5: SX-FI624C 24-port Gig Copper
+      Serial  #: W60414F001
+      P-ASIC  8: type 0111, rev 00  subrev 01
+      P-ASIC  9: type 0111, rev 00  subrev 01
+==========================================================================
+SL 6: SX-FI624C 24-port Gig Copper
+      Serial  #: CH29091677
+      P-ASIC 10: type 0111, rev 00  subrev 01
+      P-ASIC 11: type 0111, rev 00  subrev 01
+==========================================================================
+SL 7: SX-FI624C 24-port Gig Copper
+      Serial  #: CY43076382
+      P-ASIC 12: type 0111, rev 00  subrev 01
+      P-ASIC 13: type 0111, rev 00  subrev 01
+==========================================================================
+SL 8: SX-FI624HF 24-port 100/1000 Fiber
+      Serial  #: W80424F03A
+      P-ASIC 14: type 0111, rev 00  subrev 01
+      P-ASIC 15: type 0111, rev 00  subrev 01
+==========================================================================
+SL 9: SX-FI2XGMR6 2-port Management
+      Serial  #: W40444G03E
+ 	 License: SX_V6_HW_ROUTER_IPv6_SOFT_PACKAGE   (LID: yJFJJJiFIg)
+      P-ASIC 16: type 0151, rev 00  subrev 00
+      P-ASIC 17: type 0151, rev 00  subrev 00
+==========================================================================
+SL 10: SX-FI2XGMR6 2-port Management
+      Serial  #: CH40090026
+ 	 License: SX_V6_HW_ROUTER_IPv6_SOFT_PACKAGE   (LID: ejJFFOFFHL)
+      P-ASIC 18: type 0151, rev 00  subrev 00
+      P-ASIC 19: type 0151, rev 00  subrev 00
+==========================================================================
+Active Management Module:
+  660 MHz Power PC processor 8541 (version 32/0020) 66 MHz bus
+  512 KB boot flash memory
+16384 KB code flash memory
+  512 MB DRAM
+Standby Management Module:
+  660 MHz Power PC processor 8541 (version 32/0020) 66 MHz bus
+  512 KB boot flash memory
+16384 KB code flash memory
+  512 MB DRAM
+Monitor Option is on
+The system uptime is 6 days 1 hours 23 minutes 12 seconds 
+The system : started=warm start   reloaded=by "reload"
+
+telnet@SX1.solomon#
+____________________________________________________________________________________________________
+LINE#0001: []
+LINE#0002: [telnet@SX1.solomon#show ver]
+LINE#0003: []
+LINE#0004: [==========================================================================]
+LINE#0005: [Active Management CPU [Slot-10]:]
+LINE#0006: [  SW: Version 07.2.02fT3e3 Copyright (c) 1996-2010 Brocade Communications Systems, Inc.]
+LINE#0007: [      Compiled on Feb 16 2012 at 20:48:44 labeled as SXR07202f]
+LINE#0008: [      (4070551 bytes) Primary SXR07202f.bin]
+LINE#0009: [      BootROM: Version 07.2.00T3e5 (FEv2)]
+LINE#0010: [      Chassis Serial  #: B3FH11F062]
+LINE#0011: [ 	 License: SX_V6_HW_ROUTER_IPv6_SOFT_PACKAGE   (LID: ejJFFOFFHL)]
+LINE#0012: [  HW: Chassis FastIron SX 800-PREM6 (PROM-TYPE SX-FIL3U-6-IPV6)]
+LINE#0013: [==========================================================================]
+LINE#0014: [Standby Management CPU [Slot-9]:]
+LINE#0015: [  SW: Version 07.2.02fT3e3 Copyright (c) 1996-2010 Brocade Communications Systems, Inc.]
+LINE#0016: [      Compiled on Feb 16 2012 at 20:48:44 labeled as SXR07202f]
+LINE#0017: [      BootROM: Version 07.2.00T3e5 (FEv2)]
+LINE#0018: [  HW: Chassis FastIron SX 800-PREM6 (PROM-TYPE SX-FIL3U-6-IPV6)]
+LINE#0019: [==========================================================================]
+LINE#0020: [SL 1: SX-FI624C 24-port Gig Copper]
+LINE#0021: [      Serial  #: W60402G03R]
+LINE#0022: [      P-ASIC  0: type 0111, rev 00  subrev 01]
+LINE#0023: [      P-ASIC  1: type 0111, rev 00  subrev 01]
+LINE#0024: [==========================================================================]
+LINE#0025: [SL 2: SX-FI624C 24-port Gig Copper]
+LINE#0026: [      Serial  #: CH35090161]
+LINE#0027: [      P-ASIC  2: type 0111, rev 00  subrev 01]
+LINE#0028: [      P-ASIC  3: type 0111, rev 00  subrev 01]
+LINE#0029: [==========================================================================]
+LINE#0030: [SL 3: SX-FI624C 24-port Gig Copper]
+LINE#0031: [      Serial  #: CH35090080]
+LINE#0032: [      P-ASIC  4: type 0111, rev 00  subrev 01]
+LINE#0033: [      P-ASIC  5: type 0111, rev 00  subrev 01]
+LINE#0034: [==========================================================================]
+LINE#0035: [SL 4: SX-FI624C 24-port Gig Copper]
+LINE#0036: [      Serial  #: W60439F01M]
+LINE#0037: [      P-ASIC  6: type 0111, rev 00  subrev 01]
+LINE#0038: [      P-ASIC  7: type 0111, rev 00  subrev 01]
+LINE#0039: [==========================================================================]
+LINE#0040: [SL 5: SX-FI624C 24-port Gig Copper]
+LINE#0041: [      Serial  #: W60414F001]
+LINE#0042: [      P-ASIC  8: type 0111, rev 00  subrev 01]
+LINE#0043: [      P-ASIC  9: type 0111, rev 00  subrev 01]
+LINE#0044: [==========================================================================]
+LINE#0045: [SL 6: SX-FI624C 24-port Gig Copper]
+LINE#0046: [      Serial  #: CH29091677]
+LINE#0047: [      P-ASIC 10: type 0111, rev 00  subrev 01]
+LINE#0048: [      P-ASIC 11: type 0111, rev 00  subrev 01]
+LINE#0049: [==========================================================================]
+LINE#0050: [SL 7: SX-FI624C 24-port Gig Copper]
+LINE#0051: [      Serial  #: CY43076382]
+LINE#0052: [      P-ASIC 12: type 0111, rev 00  subrev 01]
+LINE#0053: [      P-ASIC 13: type 0111, rev 00  subrev 01]
+LINE#0054: [==========================================================================]
+LINE#0055: [SL 8: SX-FI624HF 24-port 100/1000 Fiber]
+LINE#0056: [      Serial  #: W80424F03A]
+LINE#0057: [      P-ASIC 14: type 0111, rev 00  subrev 01]
+LINE#0058: [      P-ASIC 15: type 0111, rev 00  subrev 01]
+LINE#0059: [==========================================================================]
+LINE#0060: [SL 9: SX-FI2XGMR6 2-port Management]
+LINE#0061: [      Serial  #: W40444G03E]
+LINE#0062: [ 	 License: SX_V6_HW_ROUTER_IPv6_SOFT_PACKAGE   (LID: yJFJJJiFIg)]
+LINE#0063: [      P-ASIC 16: type 0151, rev 00  subrev 00]
+LINE#0064: [      P-ASIC 17: type 0151, rev 00  subrev 00]
+LINE#0065: [==========================================================================]
+LINE#0066: [SL 10: SX-FI2XGMR6 2-port Management]
+LINE#0067: [      Serial  #: CH40090026]
+LINE#0068: [ 	 License: SX_V6_HW_ROUTER_IPv6_SOFT_PACKAGE   (LID: ejJFFOFFHL)]
+LINE#0069: [      P-ASIC 18: type 0151, rev 00  subrev 00]
+LINE#0070: [      P-ASIC 19: type 0151, rev 00  subrev 00]
+LINE#0071: [==========================================================================]
+LINE#0072: [Active Management Module:]
+LINE#0073: [  660 MHz Power PC processor 8541 (version 32/0020) 66 MHz bus]
+LINE#0074: [  512 KB boot flash memory]
+LINE#0075: [16384 KB code flash memory]
+LINE#0076: [  512 MB DRAM]
+LINE#0077: [Standby Management Module:]
+LINE#0078: [  660 MHz Power PC processor 8541 (version 32/0020) 66 MHz bus]
+LINE#0079: [  512 KB boot flash memory]
+LINE#0080: [16384 KB code flash memory]
+LINE#0081: [  512 MB DRAM]
+LINE#0082: [Monitor Option is on]
+LINE#0083: [The system uptime is 6 days 1 hours 23 minutes 12 seconds]
+LINE#0084: [The system : started=warm start   reloaded=by "reload"]
+LINE#0085: []
+LINE#0086: [telnet@SX1.solomon#]
+____________________________________________________________________________________________________
+
+
+telnet@SX1.solomon#
+telnet@SX1.solomon#! configure eth1/8 with ip and enable
+telnet@SX1.solomon#config term
+telnet@SX1.solomon(config)#int eth 1/8
+telnet@SX1.solomon(config-if-e1000-1/8)#ip address 192.168.1.1/24
+Invalid input -> address 192.168.1.1/24
+Type ? for a list
+telnet@SX1.solomon(config-if-e1000-1/8)#enable
+telnet@SX1.solomon(config-if-e1000-1/8)#end
+telnet@SX1.solomon#
+telnet@SX1.solomon#
+______________________________________________________________________________
+LINE#0001: []
+LINE#0002: [telnet@SX1.solomon#]
+LINE#0003: [telnet@SX1.solomon#! configure eth1/8 with ip and enable]
+LINE#0004: [telnet@SX1.solomon#config term]
+LINE#0005: [telnet@SX1.solomon(config)#int eth 1/8]
+LINE#0006: [telnet@SX1.solomon(config-if-e1000-1/8)#ip address 192.168.1.1/24]
+LINE#0007: [Invalid input -> address 192.168.1.1/24]
+LINE#0008: [Type ? for a list]
+LINE#0009: [telnet@SX1.solomon(config-if-e1000-1/8)#enable]
+LINE#0010: [telnet@SX1.solomon(config-if-e1000-1/8)#end]
+LINE#0011: [telnet@SX1.solomon#]
+LINE#0012: [telnet@SX1.solomon#]
+______________________________________________________________________________
+
+
+telnet@SX1.solomon#show int brief | inc Up
+1/11    Up      Forward Full 1G    None  No  166  0   0024.381e.6300  BRGMO11V
+1/12    Up      Forward Full 1G    None  No  166  0   0024.381e.6300  BGTMO301
+9/1     Up      Forward Full 10G   None  No  166  0   0024.381e.6300          
+9/2     Up      Forward Full 10G   514   Yes N/A  0   0024.381e.6300          
+10/2    Up      Forward Full 10G   514   Yes N/A  0   0024.381e.6300          
+mgmt1   Up      None    Full 1G    None  No  999  0   0024.381e.6300          
+ve2     Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300  07SX/08S
+ve83    Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300          
+ve160   Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300          
+ve166   Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300          
+ve179   Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300          
+lb1     Up      N/A     N/A  N/A   None  N/A N/A  N/A N/A                     
+telnet@SX1.solomon#
+___________________________________________________________________________________________
+LINE#0001: []
+LINE#0002: [telnet@SX1.solomon#show int brief | inc Up]
+LINE#0003: [1/11    Up      Forward Full 1G    None  No  166  0   0024.381e.6300  BRGMO11V]
+LINE#0004: [1/12    Up      Forward Full 1G    None  No  166  0   0024.381e.6300  BGTMO301]
+LINE#0005: [9/1     Up      Forward Full 10G   None  No  166  0   0024.381e.6300]
+LINE#0006: [9/2     Up      Forward Full 10G   514   Yes N/A  0   0024.381e.6300]
+LINE#0007: [10/2    Up      Forward Full 10G   514   Yes N/A  0   0024.381e.6300]
+LINE#0008: [mgmt1   Up      None    Full 1G    None  No  999  0   0024.381e.6300]
+LINE#0009: [ve2     Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300  07SX/08S]
+LINE#0010: [ve83    Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300]
+LINE#0011: [ve160   Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300]
+LINE#0012: [ve166   Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300]
+LINE#0013: [ve179   Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300]
+LINE#0014: [lb1     Up      N/A     N/A  N/A   None  N/A N/A  N/A N/A]
+LINE#0015: [telnet@SX1.solomon#]
+___________________________________________________________________________________________
+
+
+/======================================\ 
+| Test brocade FastIron via console... |
+\++++++++++++++++++++++++++++++++++++++/
+Trying 10.31.184.3...
+Connected to 10.31.184.3.
+Escape character is '^]'.
+
+
+
+
+SX1.solomon#
+SX1.solomon#
+SX1.solomon#
+SX1.solomon#terminal len 0
+Invalid input -> len 0
+Type ? for a list
+SX1.solomon#skip
+Disable page display mode
+SX1.solomon#
+SX1.solomon#show ver
+
+==========================================
+______________________________________
+LINE#0001: [terminal len 0]
+LINE#0002: [Invalid input -> len 0]
+LINE#0003: [Type ? for a list]
+LINE#0004: [SX1.solomon#skip]
+LINE#0005: [Disable page display mode]
+LINE#0006: [SX1.solomon#]
+______________________________________
+
+================================
+Active Management CPU [Slot-10]:
+  SW: Version 07.2.02fT3e3 Copyright (c) 1996-2010 Brocade Communications Systems, Inc.
+      Compiled on Feb 16 2012 at 20:48:44 labeled as SXR07202f
+      (4070551 bytes) Primary SXR07202f.bin
+      BootROM: Version 07.2.00T3e5 (FEv2)
+      Chassis Serial  #: B3FH11F062
+ 	 License: SX_V6_HW_ROUTER_IPv6_SOFT_PACKAGE   (LID: ejJFFOFFHL)
+  HW: Chassis FastIron SX 800-PREM6 (PROM-TYPE SX-FIL3U-6-IPV6)
+==========================================================================
+Standby Management CPU [Slot-9]:
+  SW: Version 07.2.02fT3e3 Copyright (c) 1996-2010 Brocade Communications Systems, Inc.
+      Compiled on Feb 16 2012 at 20:48:44 labeled as SXR07202f
+      BootROM: Version 07.2.00T3e5 (FEv2)
+  HW: Chassis FastIron SX 800-PREM6 (PROM-TYPE SX-FIL3U-6-IPV6)
+==========================================================================
+SL 1: SX-FI624C 24-port Gig Copper
+      Serial  #: W60402G03R
+      P-ASIC  0: type 0111, rev 00  subrev 01
+      P-ASIC  1: type 0111, rev 00  subrev 01
+==========================================================================
+SL 2: SX-FI624C 24-port Gig Copper
+      Serial  #: CH35090161
+      P-ASIC  2: type 0111, rev 00  subrev 01
+      P-ASIC  3: type 0111, rev 00  subrev 01
+==========================================================================
+SL 3: SX-FI624C 24-port Gig Copper
+      Serial  #: CH35090080
+      P-ASIC  4: type 0111, rev 00  subrev 01
+      P-ASIC  5: type 0111, rev 00  subrev 01
+==========================================================================
+SL 4: SX-FI624C 24-port Gig Copper
+      Serial  #: W60439F01M
+      P-ASIC  6: type 0111, rev 00  subrev 01
+      P-ASIC  7: type 0111, rev 00  subrev 01
+==========================================================================
+SL 5: SX-FI624C 24-port Gig Copper
+      Serial  #: W60414F001
+      P-ASIC  8: type 0111, rev 00  subrev 01
+      P-ASIC  9: type 0111, rev 00  subrev 01
+==========================================================================
+SL 6: SX-FI624C 24-port Gig Copper
+      Serial  #: CH29091677
+      P-ASIC 10: type 0111, rev 00  subrev 01
+      P-ASIC 11: type 0111, rev 00  subrev 01
+==========================================================================
+SL 7: SX-FI624C 24-port Gig Copper
+      Serial  #: CY43076382
+      P-ASIC 12: type 0111, rev 00  subrev 01
+      P-ASIC 13: type 0111, rev 00  subrev 01
+==========================================================================
+SL 8: SX-FI624HF 24-port 100/1000 Fiber
+      Serial  #: W80424F03A
+      P-ASIC 14: type 0111, rev 00  subrev 01
+      P-ASIC 15: type 0111, rev 00  subrev 01
+==========================================================================
+SL 9: SX-FI2XGMR6 2-port Management
+      Serial  #: W40444G03E
+ 	 License: SX_V6_HW_ROUTER_IPv6_SOFT_PACKAGE   (LID: yJFJJJiFIg)
+      P-ASIC 16: type 0151, rev 00  subrev 00
+      P-ASIC 17: type 0151, rev 00  subrev 00
+==========================================================================
+SL 10: SX-FI2XGMR6 2-port Management
+      Serial  #: CH40090026
+ 	 License: SX_V6_HW_ROUTER_IPv6_SOFT_PACKAGE   (LID: ejJFFOFFHL)
+      P-ASIC 18: type 0151, rev 00  subrev 00
+      P-ASIC 19: type 0151, rev 00  subrev 00
+==========================================================================
+Active Management Module:
+  660 MHz Power PC processor 8541 (version 32/0020) 66 MHz bus
+  512 KB boot flash memory
+16384 KB code flash memory
+  512 MB DRAM
+Standby Management Module:
+  660 MHz Power PC processor 8541 (version 32/0020) 66 MHz bus
+  512 KB boot flash memory
+16384 KB code flash memory
+  512 MB DRAM
+Monitor Option is on
+The system uptime is 6 days 1 hours 23 minutes 13 seconds 
+The system : started=warm start   reloaded=by "reload"
+
+SX1.solomon#configure eth1/8 with ip and enable
+Invalid input -> eth1/8 with ip and enable
+Type ? for a list
+SX1.solomon#config term
+SX1.solomon(config)#int eth 1/8
+SX1.solomon(config-if-e1000-1/8)#ip address 192.168.1.1/24
+Invalid input -> address 192.168.1.1/24
+Type ? for a list
+SX1.solomon(config-if-e1000-1/8)#enable
+SX1.solomon(config-if-e1000-1/8)#end
+SX1.solomon#
+SX1.solomon#
+____________________________________________________________________________________________________
+LINE#0001: []
+LINE#0002: [SX1.solomon#show ver]
+LINE#0003: []
+LINE#0004: [==========================================================================]
+LINE#0005: [Active Management CPU [Slot-10]:]
+LINE#0006: [  SW: Version 07.2.02fT3e3 Copyright (c) 1996-2010 Brocade Communications Systems, Inc.]
+LINE#0007: [      Compiled on Feb 16 2012 at 20:48:44 labeled as SXR07202f]
+LINE#0008: [      (4070551 bytes) Primary SXR07202f.bin]
+LINE#0009: [      BootROM: Version 07.2.00T3e5 (FEv2)]
+LINE#0010: [      Chassis Serial  #: B3FH11F062]
+LINE#0011: [ 	 License: SX_V6_HW_ROUTER_IPv6_SOFT_PACKAGE   (LID: ejJFFOFFHL)]
+LINE#0012: [  HW: Chassis FastIron SX 800-PREM6 (PROM-TYPE SX-FIL3U-6-IPV6)]
+LINE#0013: [==========================================================================]
+LINE#0014: [Standby Management CPU [Slot-9]:]
+LINE#0015: [  SW: Version 07.2.02fT3e3 Copyright (c) 1996-2010 Brocade Communications Systems, Inc.]
+LINE#0016: [      Compiled on Feb 16 2012 at 20:48:44 labeled as SXR07202f]
+LINE#0017: [      BootROM: Version 07.2.00T3e5 (FEv2)]
+LINE#0018: [  HW: Chassis FastIron SX 800-PREM6 (PROM-TYPE SX-FIL3U-6-IPV6)]
+LINE#0019: [==========================================================================]
+LINE#0020: [SL 1: SX-FI624C 24-port Gig Copper]
+LINE#0021: [      Serial  #: W60402G03R]
+LINE#0022: [      P-ASIC  0: type 0111, rev 00  subrev 01]
+LINE#0023: [      P-ASIC  1: type 0111, rev 00  subrev 01]
+LINE#0024: [==========================================================================]
+LINE#0025: [SL 2: SX-FI624C 24-port Gig Copper]
+LINE#0026: [      Serial  #: CH35090161]
+LINE#0027: [      P-ASIC  2: type 0111, rev 00  subrev 01]
+LINE#0028: [      P-ASIC  3: type 0111, rev 00  subrev 01]
+LINE#0029: [==========================================================================]
+LINE#0030: [SL 3: SX-FI624C 24-port Gig Copper]
+LINE#0031: [      Serial  #: CH35090080]
+LINE#0032: [      P-ASIC  4: type 0111, rev 00  subrev 01]
+LINE#0033: [      P-ASIC  5: type 0111, rev 00  subrev 01]
+LINE#0034: [==========================================================================]
+LINE#0035: [SL 4: SX-FI624C 24-port Gig Copper]
+LINE#0036: [      Serial  #: W60439F01M]
+LINE#0037: [      P-ASIC  6: type 0111, rev 00  subrev 01]
+LINE#0038: [      P-ASIC  7: type 0111, rev 00  subrev 01]
+LINE#0039: [==========================================================================]
+LINE#0040: [SL 5: SX-FI624C 24-port Gig Copper]
+LINE#0041: [      Serial  #: W60414F001]
+LINE#0042: [      P-ASIC  8: type 0111, rev 00  subrev 01]
+LINE#0043: [      P-ASIC  9: type 0111, rev 00  subrev 01]
+LINE#0044: [==========================================================================]
+LINE#0045: [SL 6: SX-FI624C 24-port Gig Copper]
+LINE#0046: [      Serial  #: CH29091677]
+LINE#0047: [      P-ASIC 10: type 0111, rev 00  subrev 01]
+LINE#0048: [      P-ASIC 11: type 0111, rev 00  subrev 01]
+LINE#0049: [==========================================================================]
+LINE#0050: [SL 7: SX-FI624C 24-port Gig Copper]
+LINE#0051: [      Serial  #: CY43076382]
+LINE#0052: [      P-ASIC 12: type 0111, rev 00  subrev 01]
+LINE#0053: [      P-ASIC 13: type 0111, rev 00  subrev 01]
+LINE#0054: [==========================================================================]
+LINE#0055: [SL 8: SX-FI624HF 24-port 100/1000 Fiber]
+LINE#0056: [      Serial  #: W80424F03A]
+LINE#0057: [      P-ASIC 14: type 0111, rev 00  subrev 01]
+LINE#0058: [      P-ASIC 15: type 0111, rev 00  subrev 01]
+LINE#0059: [==========================================================================]
+LINE#0060: [SL 9: SX-FI2XGMR6 2-port Management]
+LINE#0061: [      Serial  #: W40444G03E]
+LINE#0062: [ 	 License: SX_V6_HW_ROUTER_IPv6_SOFT_PACKAGE   (LID: yJFJJJiFIg)]
+LINE#0063: [      P-ASIC 16: type 0151, rev 00  subrev 00]
+LINE#0064: [      P-ASIC 17: type 0151, rev 00  subrev 00]
+LINE#0065: [==========================================================================]
+LINE#0066: [SL 10: SX-FI2XGMR6 2-port Management]
+LINE#0067: [      Serial  #: CH40090026]
+LINE#0068: [ 	 License: SX_V6_HW_ROUTER_IPv6_SOFT_PACKAGE   (LID: ejJFFOFFHL)]
+LINE#0069: [      P-ASIC 18: type 0151, rev 00  subrev 00]
+LINE#0070: [      P-ASIC 19: type 0151, rev 00  subrev 00]
+LINE#0071: [==========================================================================]
+LINE#0072: [Active Management Module:]
+LINE#0073: [  660 MHz Power PC processor 8541 (version 32/0020) 66 MHz bus]
+LINE#0074: [  512 KB boot flash memory]
+LINE#0075: [16384 KB code flash memory]
+LINE#0076: [  512 MB DRAM]
+LINE#0077: [Standby Management Module:]
+LINE#0078: [  660 MHz Power PC processor 8541 (version 32/0020) 66 MHz bus]
+LINE#0079: [  512 KB boot flash memory]
+LINE#0080: [16384 KB code flash memory]
+LINE#0081: [  512 MB DRAM]
+LINE#0082: [Monitor Option is on]
+LINE#0083: [The system uptime is 6 days 1 hours 23 minutes 13 seconds]
+LINE#0084: [The system : started=warm start   reloaded=by "reload"]
+LINE#0085: []
+LINE#0086: [SX1.solomon#configure eth1/8 with ip and enable]
+LINE#0087: [Invalid input -> eth1/8 with ip and enable]
+LINE#0088: [Type ? for a list]
+LINE#0089: [SX1.solomon#config term]
+LINE#0090: [SX1.solomon(config)#int eth 1/8]
+LINE#0091: [SX1.solomon(config-if-e1000-1/8)#ip address 192.168.1.1/24]
+LINE#0092: [Invalid input -> address 192.168.1.1/24]
+LINE#0093: [Type ? for a list]
+LINE#0094: [SX1.solomon(config-if-e1000-1/8)#enable]
+LINE#0095: [SX1.solomon(config-if-e1000-1/8)#end]
+LINE#0096: [SX1.solomon#]
+LINE#0097: [SX1.solomon#]
+____________________________________________________________________________________________________
+
+
+SX1.solomon#show int brief | inc Up
+1/11    Up      Forward Full 1G    None  No  166  0   0024.381e.6300  BRGMO11V
+1/12    Up      Forward Full 1G    None  No  166  0   0024.381e.6300  BGTMO301
+9/1     Up      Forward Full 10G   None  No  166  0   0024.381e.6300          
+9/2     Up      Forward Full 10G   514   Yes N/A  0   0024.381e.6300          
+10/2    Up      Forward Full 10G   514   Yes N/A  0   0024.381e.6300          
+mgmt1   Up      None    Full 1G    None  No  999  0   0024.381e.6300          
+ve2     Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300  07SX/08S
+ve83    Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300          
+ve160   Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300          
+ve166   Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300          
+ve179   Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300          
+lb1     Up      N/A     N/A  N/A   None  N/A N/A  N/A N/A                     
+SX1.solomon#
+___________________________________________________________________________________________
+LINE#0001: []
+LINE#0002: [SX1.solomon#show int brief | inc Up]
+LINE#0003: [1/11    Up      Forward Full 1G    None  No  166  0   0024.381e.6300  BRGMO11V]
+LINE#0004: [1/12    Up      Forward Full 1G    None  No  166  0   0024.381e.6300  BGTMO301]
+LINE#0005: [9/1     Up      Forward Full 10G   None  No  166  0   0024.381e.6300]
+LINE#0006: [9/2     Up      Forward Full 10G   514   Yes N/A  0   0024.381e.6300]
+LINE#0007: [10/2    Up      Forward Full 10G   514   Yes N/A  0   0024.381e.6300]
+LINE#0008: [mgmt1   Up      None    Full 1G    None  No  999  0   0024.381e.6300]
+LINE#0009: [ve2     Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300  07SX/08S]
+LINE#0010: [ve83    Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300]
+LINE#0011: [ve160   Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300]
+LINE#0012: [ve166   Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300]
+LINE#0013: [ve179   Up      N/A     N/A  N/A   None  N/A N/A  N/A 0024.381e.6300]
+LINE#0014: [lb1     Up      N/A     N/A  N/A   None  N/A N/A  N/A N/A]
+LINE#0015: [SX1.solomon#]
+___________________________________________________________________________________________
+

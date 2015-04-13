@@ -1,0 +1,966 @@
+
+/======================================\ 
+| Test brocade NetIron via ssh.......  |
+\++++++++++++++++++++++++++++++++++++++/
+
+Password:
+SSH@Brocade.NetIron.56d>enable
+Password:
+
+================================ATTENTION===================================
+*                                                                          *
+*                                                                          *
+*                        Static  Lab  Device  Info                         *
+*                                                                          *
+*                                                                          *
+*                 Vendor             : Brocade                             *
+*                 OS                 : NetIron 5.6d                        *
+*                 Device             : MLX4                                *
+*                 Location           : NA                                  *
+*                 Telnet             : On                                  *
+*                 Console            : On                                  *
+*                 SSH                : On                                  *
+*                 SNMP ro            : NA                                  *
+*                 SNMP wr            : NA                                  *
+*                                                                          *
+*                                                                          *
+*                                                                          *
+================================ATTENTION===================================
+
+
+SSH@Brocade.NetIron.56d#terminal len 0
+SSH@Brocade.NetIron.56d#skip
+Disable page display mode
+SSH@Brocade.NetIron.56d#
+SSH@Brocade.NetIron.56d#show ver
+System Mode: MLX
+Chassis: NetIron 4-slot (Serial #: A30538F08T,  Part #: 35550-000B)
+NI-X-HSF Switch Fabric Module 1 (Serial #: BEW0409H04F,  Part #: 60-1001512-10)
+FE 1: Type fe600,  Version 1
+Switch Fabric Module 1 Up Time is 118 days 21 minutes 9 seconds 
+NI-X-HSF Switch Fabric Module 2 (Serial #: BEW0338F0BM,  Part #: 60-1001512-09)
+FE 1: Type fe600,  Version 1
+Switch Fabric Module 2 Up Time is 118 days 21 minutes 9 seconds 
+==========================================================================
+SL M1: NI-MLX-MR Management Module Active (Serial #: N00430G018, Part #:    35524-104A):
+Boot     : Version 5.6.0T165 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Sep 20 2013 at 16:42:38 labeled as xmprm05600
+ (516258 bytes) from boot flash
+Monitor  : Version 5.6.0T165 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Sep 20 2013 at 16:41:56 labeled as xmb05600
+ (534157 bytes) from code flash
+IronWare : Version 5.6.0dT163 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Jul 24 2014 at 22:51:20 labeled as xmr05600d
+ (9442445 bytes) from Primary
+Board ID : 00 MBRIDGE Revision : 37
+916 MHz Power PC processor 7447A (version 8003/0101) 166 MHz bus
+512 KB Boot Flash (MX29LV040C), 32 MB Code Flash (MT28F128J3)
+1024 MB DRAM INSTALLED
+1024 MB DRAM ADDRESSABLE
+Active Management uptime is 118 days 21 minutes 9 seconds 
+==========================================================================
+SL 1: NI-MLX-10Gx8-M 8-port 10GbE (M) Module (Serial #: BEQ0415J00N, Part #: 60-1001587-16)
+(LID: dgsFJGKlFFp)
+Boot     : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Sep 20 2013 at 16:43:00 labeled as xmlprm05600
+ (423373 bytes) from boot flash
+Monitor  : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Sep 20 2013 at 16:43:26 labeled as xmlb05600
+ (539767 bytes) from code flash
+IronWare : Version 5.6.0dT177 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Jul 24 2014 at 22:57:38 labeled as xmlp05600d
+ (7492178 bytes) from Primary
+FPGA versions: 
+Valid PBIF Version = 2.16, Build Time = 6/10/2014 11:47:00
+
+Valid XPP Version = 7.04, Build Time = 8/26/2013 9:57:00
+
+X10G2MAC 0
+X10G2MAC 1
+X10G2MAC 2
+X10G2MAC 3
+1333 MHz MPC 8541 (version 8021/0022) 533 MHz bus
+512 KB Boot Flash (MX29LV040C), 64 MB Code Flash (MT28F256J3)
+1024 MB DRAM, 8 KB SRAM, 286331153 Bytes BRAM
+LP Slot 1 uptime is 118 days 20 minutes 32 seconds 
+==========================================================================
+SL 2: NI-MLX-10Gx4 4-port 10GbE Module (Serial #: SA34090799, Part #: 35600-202D)
+Boot     : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Sep 20 2013 at 16:43:00 labeled as xmlprm05600
+ (423373 bytes) from boot flash
+Monitor  : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Sep 20 2013 at 16:43:26 labeled as xmlb05600
+ (539767 bytes) from code flash
+IronWare : Version 5.6.0dT177 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Jul 24 2014 at 22:57:38 labeled as xmlp05600d
+ (7492178 bytes) from Primary
+FPGA versions: 
+Valid PBIF Version = 4.02, Build Time = 8/26/2013 14:30:00
+
+Valid XPP Version = 1.01, Build Time = 9/6/2013 14:17:00
+
+Valid XGMAC Version = 0.15, Build Time = 10/14/2010 16:31:00
+
+X10G2MAC 0
+X10G2MAC 1
+666 MHz MPC 8541 (version 8020/0020) 333 MHz bus
+512 KB Boot Flash (AM29LV040B), 16 MB Code Flash (MT28F640J3)
+512 MB DRAM, 8 KB SRAM, 0 Bytes BRAM
+LP Slot 2 uptime is 118 days 20 minutes 28 seconds 
+==========================================================================
+SL 3: NI-MLX-1Gx20-SFP 20-port 1GbE-100FX Module (Serial #: T22634F0S6, Part #: 35604-152E)
+Boot     : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Sep 20 2013 at 16:43:00 labeled as xmlprm05600
+ (423373 bytes) from boot flash
+Monitor  : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Sep 20 2013 at 16:43:26 labeled as xmlb05600
+ (539767 bytes) from code flash
+IronWare : Version 5.6.0dT177 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Jul 24 2014 at 22:57:38 labeled as xmlp05600d
+ (7492178 bytes) from Primary
+FPGA versions: 
+Valid PBIF Version = 4.02, Build Time = 8/26/2013 14:30:00
+
+Valid XPP Version = 1.01, Build Time = 9/6/2013 14:17:00
+
+BCM5695GMAC 0
+BCM5695GMAC 1
+666 MHz MPC 8541 (version 8020/0020) 333 MHz bus
+512 KB Boot Flash (MX29LV040C), 16 MB Code Flash (MT28F640J3)
+512 MB DRAM, 8 KB SRAM, 286331153 Bytes BRAM
+LP Slot 3 uptime is 118 days 20 minutes 28 seconds 
+==========================================================================
+All show version done
+SSH@Brocade.NetIron.56d#
+SSH@Brocade.NetIron.56d#
+
+
+
+/==================================\ 
+| Output of Command A - single cmd |
+\++++++++++++++++++++++++++++++++++/
+
+________________________________________________________________________________________________________
+LINE#0001: [show ver]
+LINE#0002: [System Mode: MLX]
+LINE#0003: [Chassis: NetIron 4-slot (Serial #: A30538F08T,  Part #: 35550-000B)]
+LINE#0004: [NI-X-HSF Switch Fabric Module 1 (Serial #: BEW0409H04F,  Part #: 60-1001512-10)]
+LINE#0005: [FE 1: Type fe600,  Version 1]
+LINE#0006: [Switch Fabric Module 1 Up Time is 118 days 21 minutes 9 seconds]
+LINE#0007: [NI-X-HSF Switch Fabric Module 2 (Serial #: BEW0338F0BM,  Part #: 60-1001512-09)]
+LINE#0008: [FE 1: Type fe600,  Version 1]
+LINE#0009: [Switch Fabric Module 2 Up Time is 118 days 21 minutes 9 seconds]
+LINE#0010: [==========================================================================]
+LINE#0011: [SL M1: NI-MLX-MR Management Module Active (Serial #: N00430G018, Part #:    35524-104A):]
+LINE#0012: [Boot     : Version 5.6.0T165 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0013: [Compiled on Sep 20 2013 at 16:42:38 labeled as xmprm05600]
+LINE#0014: [ (516258 bytes) from boot flash]
+LINE#0015: [Monitor  : Version 5.6.0T165 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0016: [Compiled on Sep 20 2013 at 16:41:56 labeled as xmb05600]
+LINE#0017: [ (534157 bytes) from code flash]
+LINE#0018: [IronWare : Version 5.6.0dT163 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0019: [Compiled on Jul 24 2014 at 22:51:20 labeled as xmr05600d]
+LINE#0020: [ (9442445 bytes) from Primary]
+LINE#0021: [Board ID : 00 MBRIDGE Revision : 37]
+LINE#0022: [916 MHz Power PC processor 7447A (version 8003/0101) 166 MHz bus]
+LINE#0023: [512 KB Boot Flash (MX29LV040C), 32 MB Code Flash (MT28F128J3)]
+LINE#0024: [1024 MB DRAM INSTALLED]
+LINE#0025: [1024 MB DRAM ADDRESSABLE]
+LINE#0026: [Active Management uptime is 118 days 21 minutes 9 seconds]
+LINE#0027: [==========================================================================]
+LINE#0028: [SL 1: NI-MLX-10Gx8-M 8-port 10GbE (M) Module (Serial #: BEQ0415J00N, Part #: 60-1001587-16)]
+LINE#0029: [(LID: dgsFJGKlFFp)]
+LINE#0030: [Boot     : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0031: [Compiled on Sep 20 2013 at 16:43:00 labeled as xmlprm05600]
+LINE#0032: [ (423373 bytes) from boot flash]
+LINE#0033: [Monitor  : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0034: [Compiled on Sep 20 2013 at 16:43:26 labeled as xmlb05600]
+LINE#0035: [ (539767 bytes) from code flash]
+LINE#0036: [IronWare : Version 5.6.0dT177 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0037: [Compiled on Jul 24 2014 at 22:57:38 labeled as xmlp05600d]
+LINE#0038: [ (7492178 bytes) from Primary]
+LINE#0039: [FPGA versions:]
+LINE#0040: [Valid PBIF Version = 2.16, Build Time = 6/10/2014 11:47:00]
+LINE#0041: []
+LINE#0042: [Valid XPP Version = 7.04, Build Time = 8/26/2013 9:57:00]
+LINE#0043: []
+LINE#0044: [X10G2MAC 0]
+LINE#0045: [X10G2MAC 1]
+LINE#0046: [X10G2MAC 2]
+LINE#0047: [X10G2MAC 3]
+LINE#0048: [1333 MHz MPC 8541 (version 8021/0022) 533 MHz bus]
+LINE#0049: [512 KB Boot Flash (MX29LV040C), 64 MB Code Flash (MT28F256J3)]
+LINE#0050: [1024 MB DRAM, 8 KB SRAM, 286331153 Bytes BRAM]
+LINE#0051: [LP Slot 1 uptime is 118 days 20 minutes 32 seconds]
+LINE#0052: [==========================================================================]
+LINE#0053: [SL 2: NI-MLX-10Gx4 4-port 10GbE Module (Serial #: SA34090799, Part #: 35600-202D)]
+LINE#0054: [Boot     : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0055: [Compiled on Sep 20 2013 at 16:43:00 labeled as xmlprm05600]
+LINE#0056: [ (423373 bytes) from boot flash]
+LINE#0057: [Monitor  : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0058: [Compiled on Sep 20 2013 at 16:43:26 labeled as xmlb05600]
+LINE#0059: [ (539767 bytes) from code flash]
+LINE#0060: [IronWare : Version 5.6.0dT177 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0061: [Compiled on Jul 24 2014 at 22:57:38 labeled as xmlp05600d]
+LINE#0062: [ (7492178 bytes) from Primary]
+LINE#0063: [FPGA versions:]
+LINE#0064: [Valid PBIF Version = 4.02, Build Time = 8/26/2013 14:30:00]
+LINE#0065: []
+LINE#0066: [Valid XPP Version = 1.01, Build Time = 9/6/2013 14:17:00]
+LINE#0067: []
+LINE#0068: [Valid XGMAC Version = 0.15, Build Time = 10/14/2010 16:31:00]
+LINE#0069: []
+LINE#0070: [X10G2MAC 0]
+LINE#0071: [X10G2MAC 1]
+LINE#0072: [666 MHz MPC 8541 (version 8020/0020) 333 MHz bus]
+LINE#0073: [512 KB Boot Flash (AM29LV040B), 16 MB Code Flash (MT28F640J3)]
+LINE#0074: [512 MB DRAM, 8 KB SRAM, 0 Bytes BRAM]
+LINE#0075: [LP Slot 2 uptime is 118 days 20 minutes 28 seconds]
+LINE#0076: [==========================================================================]
+LINE#0077: [SL 3: NI-MLX-1Gx20-SFP 20-port 1GbE-100FX Module (Serial #: T22634F0S6, Part #: 35604-152E)]
+LINE#0078: [Boot     : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0079: [Compiled on Sep 20 2013 at 16:43:00 labeled as xmlprm05600]
+LINE#0080: [ (423373 bytes) from boot flash]
+LINE#0081: [Monitor  : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0082: [Compiled on Sep 20 2013 at 16:43:26 labeled as xmlb05600]
+LINE#0083: [ (539767 bytes) from code flash]
+LINE#0084: [IronWare : Version 5.6.0dT177 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0085: [Compiled on Jul 24 2014 at 22:57:38 labeled as xmlp05600d]
+LINE#0086: [ (7492178 bytes) from Primary]
+LINE#0087: [FPGA versions:]
+LINE#0088: [Valid PBIF Version = 4.02, Build Time = 8/26/2013 14:30:00]
+LINE#0089: []
+LINE#0090: [Valid XPP Version = 1.01, Build Time = 9/6/2013 14:17:00]
+LINE#0091: []
+LINE#0092: [BCM5695GMAC 0]
+LINE#0093: [BCM5695GMAC 1]
+LINE#0094: [666 MHz MPC 8541 (version 8020/0020) 333 MHz bus]
+LINE#0095: [512 KB Boot Flash (MX29LV040C), 16 MB Code Flash (MT28F640J3)]
+LINE#0096: [512 MB DRAM, 8 KB SRAM, 286331153 Bytes BRAM]
+LINE#0097: [LP Slot 3 uptime is 118 days 20 minutes 28 seconds]
+LINE#0098: [==========================================================================]
+LINE#0099: [All show version done]
+LINE#0100: [SSH@Brocade.NetIron.56d#]
+LINE#0101: [SSH@Brocade.NetIron.56d#]
+________________________________________________________________________________________________________
+
+
+SSH@Brocade.NetIron.56d#! configure eth1/8 with ip and enable
+SSH@Brocade.NetIron.56d#config term
+SSH@Brocade.NetIron.56d(config)#int eth 1/8
+SSH@Brocade.NetIron.56d(config-if-e10000-1/8)#ip address 192.168.1.1/24
+Error: Duplicate ip address
+SSH@Brocade.NetIron.56d(config-if-e10000-1/8)#enable
+SSH@Brocade.NetIron.56d(config-if-e10000-1/8)#end
+SSH@Brocade.NetIron.56d#
+SSH@Brocade.NetIron.56d#
+SSH@Brocade.NetIron.56d#
+
+
+
+/====================================\ 
+| Output of Command B - multiple cmd |
+\++++++++++++++++++++++++++++++++++++/
+
+____________________________________________________________________________________
+LINE#0001: []
+LINE#0002: [SSH@Brocade.NetIron.56d#! configure eth1/8 with ip and enable]
+LINE#0003: [SSH@Brocade.NetIron.56d#config term]
+LINE#0004: [SSH@Brocade.NetIron.56d(config)#int eth 1/8]
+LINE#0005: [SSH@Brocade.NetIron.56d(config-if-e10000-1/8)#ip address 192.168.1.1/24]
+LINE#0006: [Error: Duplicate ip address]
+LINE#0007: [SSH@Brocade.NetIron.56d(config-if-e10000-1/8)#enable]
+LINE#0008: [SSH@Brocade.NetIron.56d(config-if-e10000-1/8)#end]
+LINE#0009: [SSH@Brocade.NetIron.56d#]
+LINE#0010: [SSH@Brocade.NetIron.56d#]
+LINE#0011: [SSH@Brocade.NetIron.56d#]
+____________________________________________________________________________________
+
+show int brief wide | inc Up
+Port   Link     Port-State   Speed Tag MAC            Name
+1/1    Up       Forward      10G   Yes 001b.ed3b.8200 MCT ICL Link 1
+1/2    Up       Forward      10G   Yes 001b.ed3b.8200 MCT ICL Link 2
+1/4    Up       Forward      10G   No  001b.ed3b.8200 
+1/5    Up       Forward      10G   No  001b.ed3b.8204 
+1/6    Up       Forward      10G   No  001b.ed3b.8205 
+2/1    Up       Forward      10G   No  001b.ed3b.8230 lag to ADX1 link 1
+mgmt1  Up       Forward      1G    Yes 001b.ed3b.8200 
+Port   Link     Port-State   Speed Tag MAC            Name
+ve12   Up       N/A          N/A   N/A 001b.ed3b.8200 
+ve14   Up       N/A          N/A   N/A 001b.ed3b.8200 
+ve90   Up       N/A          N/A   N/A 001b.ed3b.8200 
+ve100  Up       N/A          N/A   N/A 001b.ed3b.8200 
+Port   Link     Port-State   Speed Tag MAC            Name
+lb1    Up       N/A          N/A   N/A N/A            
+SSH@Brocade.NetIron.56d#
+SSH@Brocade.NetIron.56d#
+
+
+
+/================================================\ 
+| Output of Command C - single cmd with pipeline |
+\++++++++++++++++++++++++++++++++++++++++++++++++/
+
+_____________________________________________________________________________________
+LINE#0001: [show int brief wide | inc Up]
+LINE#0002: [Port   Link     Port-State   Speed Tag MAC            Name]
+LINE#0003: [1/1    Up       Forward      10G   Yes 001b.ed3b.8200 MCT ICL Link 1]
+LINE#0004: [1/2    Up       Forward      10G   Yes 001b.ed3b.8200 MCT ICL Link 2]
+LINE#0005: [1/4    Up       Forward      10G   No  001b.ed3b.8200]
+LINE#0006: [1/5    Up       Forward      10G   No  001b.ed3b.8204]
+LINE#0007: [1/6    Up       Forward      10G   No  001b.ed3b.8205]
+LINE#0008: [2/1    Up       Forward      10G   No  001b.ed3b.8230 lag to ADX1 link 1]
+LINE#0009: [mgmt1  Up       Forward      1G    Yes 001b.ed3b.8200]
+LINE#0010: [Port   Link     Port-State   Speed Tag MAC            Name]
+LINE#0011: [ve12   Up       N/A          N/A   N/A 001b.ed3b.8200]
+LINE#0012: [ve14   Up       N/A          N/A   N/A 001b.ed3b.8200]
+LINE#0013: [ve90   Up       N/A          N/A   N/A 001b.ed3b.8200]
+LINE#0014: [ve100  Up       N/A          N/A   N/A 001b.ed3b.8200]
+LINE#0015: [Port   Link     Port-State   Speed Tag MAC            Name]
+LINE#0016: [lb1    Up       N/A          N/A   N/A N/A]
+LINE#0017: [SSH@Brocade.NetIron.56d#]
+LINE#0018: [SSH@Brocade.NetIron.56d#]
+_____________________________________________________________________________________
+
+
+/======================================\ 
+| Test brocade NetIron via telnet....  |
+\++++++++++++++++++++++++++++++++++++++/
+Trying 10.18.16.54...
+Connected to 10.18.16.54.
+Escape character is '^]'.
+
+User Access Verification
+
+Please Enter Login Name: 
+
+User Access Verification
+
+Please Enter Login Name: admin
+Please Enter Password: 
+
+User login successful.
+
+telnet@Brocade.NetIron.56d>enable
+Password:
+
+================================ATTENTION===================================
+*                                                                          *
+*                                                                          *
+*                        Static  Lab  Device  Info                         *
+*                                                                          *
+*                                                                          *
+*                 Vendor             : Brocade                             *
+*                 OS                 : NetIron 5.6d                        *
+*                 Device             : MLX4                                *
+*                 Location           : NA                                  *
+*                 Telnet             : On                                  *
+*                 Console            : On                                  *
+*                 SSH                : On                                  *
+*                 SNMP ro            : NA                                  *
+*                 SNMP wr            : NA                                  *
+*                                                                          *
+*                                                                          *
+*                                                                          *
+================================ATTENTION===================================
+
+
+telnet@Brocade.NetIron.56d#terminal len 0
+telnet@Brocade.NetIron.56d#skip
+Disable page display mode
+telnet@Brocade.NetIron.56d#
+telnet@Brocade.NetIron.56d#show ver
+System Mode: MLX
+Chassis: NetIron 4-slot (Serial #: A30538F08T,  Part #: 35550-000B)
+NI-X-HSF Switch Fabric Module 1 (Serial #: BEW0409H04F,  Part #: 60-1001512-10)
+FE 1: Type fe600,  Version 1
+Switch Fabric Module 1 Up Time is 118 days 21 minutes 11 seconds 
+NI-X-HSF Switch Fabric Module 2 (Serial #: BEW0338F0BM,  Part #: 60-1001512-09)
+FE 1: Type fe600,  Version 1
+Switch Fabric Module 2 Up Time is 118 days 21 minutes 11 seconds 
+==========================================================================
+SL M1: NI-MLX-MR Management Module Active (Serial #: N00430G018, Part #:    35524-104A):
+Boot     : Version 5.6.0T165 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Sep 20 2013 at 16:42:38 labeled as xmprm05600
+ (516258 bytes) from boot flash
+Monitor  : Version 5.6.0T165 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Sep 20 2013 at 16:41:56 labeled as xmb05600
+ (534157 bytes) from code flash
+IronWare : Version 5.6.0dT163 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Jul 24 2014 at 22:51:20 labeled as xmr05600d
+ (9442445 bytes) from Primary
+Board ID : 00 MBRIDGE Revision : 37
+916 MHz Power PC processor 7447A (version 8003/0101) 166 MHz bus
+512 KB Boot Flash (MX29LV040C), 32 MB Code Flash (MT28F128J3)
+1024 MB DRAM INSTALLED
+1024 MB DRAM ADDRESSABLE
+Active Management uptime is 118 days 21 minutes 11 seconds 
+==========================================================================
+SL 1: NI-MLX-10Gx8-M 8-port 10GbE (M) Module (Serial #: BEQ0415J00N, Part #: 60-1001587-16)
+(LID: dgsFJGKlFFp)
+Boot     : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Sep 20 2013 at 16:43:00 labeled as xmlprm05600
+ (423373 bytes) from boot flash
+Monitor  : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Sep 20 2013 at 16:43:26 labeled as xmlb05600
+ (539767 bytes) from code flash
+IronWare : Version 5.6.0dT177 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Jul 24 2014 at 22:57:38 labeled as xmlp05600d
+ (7492178 bytes) from Primary
+FPGA versions: 
+Valid PBIF Version = 2.16, Build Time = 6/10/2014 11:47:00
+
+Valid XPP Version = 7.04, Build Time = 8/26/2013 9:57:00
+
+X10G2MAC 0
+X10G2MAC 1
+X10G2MAC 2
+X10G2MAC 3
+1333 MHz MPC 8541 (version 8021/0022) 533 MHz bus
+512 KB Boot Flash (MX29LV040C), 64 MB Code Flash (MT28F256J3)
+1024 MB DRAM, 8 KB SRAM, 286331153 Bytes BRAM
+LP Slot 1 uptime is 118 days 20 minutes 34 seconds 
+==========================================================================
+SL 2: NI-MLX-10Gx4 4-port 10GbE Module (Serial #: SA34090799, Part #: 35600-202D)
+Boot     : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Sep 20 2013 at 16:43:00 labeled as xmlprm05600
+ (423373 bytes) from boot flash
+Monitor  : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Sep 20 2013 at 16:43:26 labeled as xmlb05600
+ (539767 bytes) from code flash
+IronWare : Version 5.6.0dT177 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Jul 24 2014 at 22:57:38 labeled as xmlp05600d
+ (7492178 bytes) from Primary
+FPGA versions: 
+Valid PBIF Version = 4.02, Build Time = 8/26/2013 14:30:00
+
+Valid XPP Version = 1.01, Build Time = 9/6/2013 14:17:00
+
+Valid XGMAC Version = 0.15, Build Time = 10/14/2010 16:31:00
+
+X10G2MAC 0
+X10G2MAC 1
+666 MHz MPC 8541 (version 8020/0020) 333 MHz bus
+512 KB Boot Flash (AM29LV040B), 16 MB Code Flash (MT28F640J3)
+512 MB DRAM, 8 KB SRAM, 0 Bytes BRAM
+LP Slot 2 uptime is 118 days 20 minutes 30 seconds 
+==========================================================================
+SL 3: NI-MLX-1Gx20-SFP 20-port 1GbE-100FX Module (Serial #: T22634F0S6, Part #: 35604-152E)
+Boot     : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Sep 20 2013 at 16:43:00 labeled as xmlprm05600
+ (423373 bytes) from boot flash
+Monitor  : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Sep 20 2013 at 16:43:26 labeled as xmlb05600
+ (539767 bytes) from code flash
+IronWare : Version 5.6.0dT177 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Jul 24 2014 at 22:57:38 labeled as xmlp05600d
+ (7492178 bytes) from Primary
+FPGA versions: 
+Valid PBIF Version = 4.02, Build Time = 8/26/2013 14:30:00
+
+Valid XPP Version = 1.01, Build Time = 9/6/2013 14:17:00
+
+BCM5695GMAC 0
+BCM5695GMAC 1
+666 MHz MPC 8541 (version 8020/0020) 333 MHz bus
+512 KB Boot Flash (MX29LV040C), 16 MB Code Flash (MT28F640J3)
+512 MB DRAM, 8 KB SRAM, 286331153 Bytes BRAM
+LP Slot 3 uptime is 118 days 20 minutes 30 seconds 
+==========================================================================
+All show version done
+telnet@Brocade.NetIron.56d#
+telnet@Brocade.NetIron.56d#
+
+
+
+/==================================\ 
+| Output of Command A - single cmd |
+\++++++++++++++++++++++++++++++++++/
+
+________________________________________________________________________________________________________
+LINE#0001: [show ver]
+LINE#0002: [System Mode: MLX]
+LINE#0003: [Chassis: NetIron 4-slot (Serial #: A30538F08T,  Part #: 35550-000B)]
+LINE#0004: [NI-X-HSF Switch Fabric Module 1 (Serial #: BEW0409H04F,  Part #: 60-1001512-10)]
+LINE#0005: [FE 1: Type fe600,  Version 1]
+LINE#0006: [Switch Fabric Module 1 Up Time is 118 days 21 minutes 11 seconds]
+LINE#0007: [NI-X-HSF Switch Fabric Module 2 (Serial #: BEW0338F0BM,  Part #: 60-1001512-09)]
+LINE#0008: [FE 1: Type fe600,  Version 1]
+LINE#0009: [Switch Fabric Module 2 Up Time is 118 days 21 minutes 11 seconds]
+LINE#0010: [==========================================================================]
+LINE#0011: [SL M1: NI-MLX-MR Management Module Active (Serial #: N00430G018, Part #:    35524-104A):]
+LINE#0012: [Boot     : Version 5.6.0T165 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0013: [Compiled on Sep 20 2013 at 16:42:38 labeled as xmprm05600]
+LINE#0014: [ (516258 bytes) from boot flash]
+LINE#0015: [Monitor  : Version 5.6.0T165 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0016: [Compiled on Sep 20 2013 at 16:41:56 labeled as xmb05600]
+LINE#0017: [ (534157 bytes) from code flash]
+LINE#0018: [IronWare : Version 5.6.0dT163 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0019: [Compiled on Jul 24 2014 at 22:51:20 labeled as xmr05600d]
+LINE#0020: [ (9442445 bytes) from Primary]
+LINE#0021: [Board ID : 00 MBRIDGE Revision : 37]
+LINE#0022: [916 MHz Power PC processor 7447A (version 8003/0101) 166 MHz bus]
+LINE#0023: [512 KB Boot Flash (MX29LV040C), 32 MB Code Flash (MT28F128J3)]
+LINE#0024: [1024 MB DRAM INSTALLED]
+LINE#0025: [1024 MB DRAM ADDRESSABLE]
+LINE#0026: [Active Management uptime is 118 days 21 minutes 11 seconds]
+LINE#0027: [==========================================================================]
+LINE#0028: [SL 1: NI-MLX-10Gx8-M 8-port 10GbE (M) Module (Serial #: BEQ0415J00N, Part #: 60-1001587-16)]
+LINE#0029: [(LID: dgsFJGKlFFp)]
+LINE#0030: [Boot     : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0031: [Compiled on Sep 20 2013 at 16:43:00 labeled as xmlprm05600]
+LINE#0032: [ (423373 bytes) from boot flash]
+LINE#0033: [Monitor  : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0034: [Compiled on Sep 20 2013 at 16:43:26 labeled as xmlb05600]
+LINE#0035: [ (539767 bytes) from code flash]
+LINE#0036: [IronWare : Version 5.6.0dT177 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0037: [Compiled on Jul 24 2014 at 22:57:38 labeled as xmlp05600d]
+LINE#0038: [ (7492178 bytes) from Primary]
+LINE#0039: [FPGA versions:]
+LINE#0040: [Valid PBIF Version = 2.16, Build Time = 6/10/2014 11:47:00]
+LINE#0041: []
+LINE#0042: [Valid XPP Version = 7.04, Build Time = 8/26/2013 9:57:00]
+LINE#0043: []
+LINE#0044: [X10G2MAC 0]
+LINE#0045: [X10G2MAC 1]
+LINE#0046: [X10G2MAC 2]
+LINE#0047: [X10G2MAC 3]
+LINE#0048: [1333 MHz MPC 8541 (version 8021/0022) 533 MHz bus]
+LINE#0049: [512 KB Boot Flash (MX29LV040C), 64 MB Code Flash (MT28F256J3)]
+LINE#0050: [1024 MB DRAM, 8 KB SRAM, 286331153 Bytes BRAM]
+LINE#0051: [LP Slot 1 uptime is 118 days 20 minutes 34 seconds]
+LINE#0052: [==========================================================================]
+LINE#0053: [SL 2: NI-MLX-10Gx4 4-port 10GbE Module (Serial #: SA34090799, Part #: 35600-202D)]
+LINE#0054: [Boot     : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0055: [Compiled on Sep 20 2013 at 16:43:00 labeled as xmlprm05600]
+LINE#0056: [ (423373 bytes) from boot flash]
+LINE#0057: [Monitor  : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0058: [Compiled on Sep 20 2013 at 16:43:26 labeled as xmlb05600]
+LINE#0059: [ (539767 bytes) from code flash]
+LINE#0060: [IronWare : Version 5.6.0dT177 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0061: [Compiled on Jul 24 2014 at 22:57:38 labeled as xmlp05600d]
+LINE#0062: [ (7492178 bytes) from Primary]
+LINE#0063: [FPGA versions:]
+LINE#0064: [Valid PBIF Version = 4.02, Build Time = 8/26/2013 14:30:00]
+LINE#0065: []
+LINE#0066: [Valid XPP Version = 1.01, Build Time = 9/6/2013 14:17:00]
+LINE#0067: []
+LINE#0068: [Valid XGMAC Version = 0.15, Build Time = 10/14/2010 16:31:00]
+LINE#0069: []
+LINE#0070: [X10G2MAC 0]
+LINE#0071: [X10G2MAC 1]
+LINE#0072: [666 MHz MPC 8541 (version 8020/0020) 333 MHz bus]
+LINE#0073: [512 KB Boot Flash (AM29LV040B), 16 MB Code Flash (MT28F640J3)]
+LINE#0074: [512 MB DRAM, 8 KB SRAM, 0 Bytes BRAM]
+LINE#0075: [LP Slot 2 uptime is 118 days 20 minutes 30 seconds]
+LINE#0076: [==========================================================================]
+LINE#0077: [SL 3: NI-MLX-1Gx20-SFP 20-port 1GbE-100FX Module (Serial #: T22634F0S6, Part #: 35604-152E)]
+LINE#0078: [Boot     : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0079: [Compiled on Sep 20 2013 at 16:43:00 labeled as xmlprm05600]
+LINE#0080: [ (423373 bytes) from boot flash]
+LINE#0081: [Monitor  : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0082: [Compiled on Sep 20 2013 at 16:43:26 labeled as xmlb05600]
+LINE#0083: [ (539767 bytes) from code flash]
+LINE#0084: [IronWare : Version 5.6.0dT177 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0085: [Compiled on Jul 24 2014 at 22:57:38 labeled as xmlp05600d]
+LINE#0086: [ (7492178 bytes) from Primary]
+LINE#0087: [FPGA versions:]
+LINE#0088: [Valid PBIF Version = 4.02, Build Time = 8/26/2013 14:30:00]
+LINE#0089: []
+LINE#0090: [Valid XPP Version = 1.01, Build Time = 9/6/2013 14:17:00]
+LINE#0091: []
+LINE#0092: [BCM5695GMAC 0]
+LINE#0093: [BCM5695GMAC 1]
+LINE#0094: [666 MHz MPC 8541 (version 8020/0020) 333 MHz bus]
+LINE#0095: [512 KB Boot Flash (MX29LV040C), 16 MB Code Flash (MT28F640J3)]
+LINE#0096: [512 MB DRAM, 8 KB SRAM, 286331153 Bytes BRAM]
+LINE#0097: [LP Slot 3 uptime is 118 days 20 minutes 30 seconds]
+LINE#0098: [==========================================================================]
+LINE#0099: [All show version done]
+LINE#0100: [telnet@Brocade.NetIron.56d#]
+LINE#0101: [telnet@Brocade.NetIron.56d#]
+________________________________________________________________________________________________________
+
+
+telnet@Brocade.NetIron.56d#! configure eth1/8 with ip and enable
+telnet@Brocade.NetIron.56d#config term
+telnet@Brocade.NetIron.56d(config)#int eth 1/8
+telnet@Brocade.NetIron.56d(config-if-e10000-1/8)#ip address 192.168.1.1/24
+Error: Duplicate ip address
+telnet@Brocade.NetIron.56d(config-if-e10000-1/8)#enable
+telnet@Brocade.NetIron.56d(config-if-e10000-1/8)#end
+telnet@Brocade.NetIron.56d#
+telnet@Brocade.NetIron.56d#
+telnet@Brocade.NetIron.56d#
+
+
+
+/====================================\ 
+| Output of Command B - multiple cmd |
+\++++++++++++++++++++++++++++++++++++/
+
+_______________________________________________________________________________________
+LINE#0001: []
+LINE#0002: [telnet@Brocade.NetIron.56d#! configure eth1/8 with ip and enable]
+LINE#0003: [telnet@Brocade.NetIron.56d#config term]
+LINE#0004: [telnet@Brocade.NetIron.56d(config)#int eth 1/8]
+LINE#0005: [telnet@Brocade.NetIron.56d(config-if-e10000-1/8)#ip address 192.168.1.1/24]
+LINE#0006: [Error: Duplicate ip address]
+LINE#0007: [telnet@Brocade.NetIron.56d(config-if-e10000-1/8)#enable]
+LINE#0008: [telnet@Brocade.NetIron.56d(config-if-e10000-1/8)#end]
+LINE#0009: [telnet@Brocade.NetIron.56d#]
+LINE#0010: [telnet@Brocade.NetIron.56d#]
+LINE#0011: [telnet@Brocade.NetIron.56d#]
+_______________________________________________________________________________________
+
+show int brief wide | inc Up
+Port   Link     Port-State   Speed Tag MAC            Name
+1/1    Up       Forward      10G   Yes 001b.ed3b.8200 MCT ICL Link 1
+1/2    Up       Forward      10G   Yes 001b.ed3b.8200 MCT ICL Link 2
+1/4    Up       Forward      10G   No  001b.ed3b.8200 
+1/5    Up       Forward      10G   No  001b.ed3b.8204 
+1/6    Up       Forward      10G   No  001b.ed3b.8205 
+2/1    Up       Forward      10G   No  001b.ed3b.8230 lag to ADX1 link 1
+mgmt1  Up       Forward      1G    Yes 001b.ed3b.8200 
+Port   Link     Port-State   Speed Tag MAC            Name
+ve12   Up       N/A          N/A   N/A 001b.ed3b.8200 
+ve14   Up       N/A          N/A   N/A 001b.ed3b.8200 
+ve90   Up       N/A          N/A   N/A 001b.ed3b.8200 
+ve100  Up       N/A          N/A   N/A 001b.ed3b.8200 
+Port   Link     Port-State   Speed Tag MAC            Name
+lb1    Up       N/A          N/A   N/A N/A            
+telnet@Brocade.NetIron.56d#
+telnet@Brocade.NetIron.56d#
+
+
+
+/================================================\ 
+| Output of Command C - single cmd with pipeline |
+\++++++++++++++++++++++++++++++++++++++++++++++++/
+
+_____________________________________________________________________________________
+LINE#0001: [show int brief wide | inc Up]
+LINE#0002: [Port   Link     Port-State   Speed Tag MAC            Name]
+LINE#0003: [1/1    Up       Forward      10G   Yes 001b.ed3b.8200 MCT ICL Link 1]
+LINE#0004: [1/2    Up       Forward      10G   Yes 001b.ed3b.8200 MCT ICL Link 2]
+LINE#0005: [1/4    Up       Forward      10G   No  001b.ed3b.8200]
+LINE#0006: [1/5    Up       Forward      10G   No  001b.ed3b.8204]
+LINE#0007: [1/6    Up       Forward      10G   No  001b.ed3b.8205]
+LINE#0008: [2/1    Up       Forward      10G   No  001b.ed3b.8230 lag to ADX1 link 1]
+LINE#0009: [mgmt1  Up       Forward      1G    Yes 001b.ed3b.8200]
+LINE#0010: [Port   Link     Port-State   Speed Tag MAC            Name]
+LINE#0011: [ve12   Up       N/A          N/A   N/A 001b.ed3b.8200]
+LINE#0012: [ve14   Up       N/A          N/A   N/A 001b.ed3b.8200]
+LINE#0013: [ve90   Up       N/A          N/A   N/A 001b.ed3b.8200]
+LINE#0014: [ve100  Up       N/A          N/A   N/A 001b.ed3b.8200]
+LINE#0015: [Port   Link     Port-State   Speed Tag MAC            Name]
+LINE#0016: [lb1    Up       N/A          N/A   N/A N/A]
+LINE#0017: [telnet@Brocade.NetIron.56d#]
+LINE#0018: [telnet@Brocade.NetIron.56d#]
+_____________________________________________________________________________________
+
+
+/======================================\ 
+| Test brocade NetIron via console...  |
+\++++++++++++++++++++++++++++++++++++++/
+Trying 10.31.184.1...
+Connected to 10.31.184.1.
+Escape character is '^]'.
+
+
+
+
+Brocade.NetIron.56d#
+Brocade.NetIron.56d#terminal len 0
+Brocade.NetIron.56d#skip
+Disable page display mode
+Brocade.NetIron.56d#
+Brocade.NetIron.56d#show ver
+System Mode: MLX
+Chassis: NetIron 4-slot (Serial #: A30538F08T,  Part #: 35550-000B)
+NI-X-HSF Switch Fabric Module 1 (Serial #: BEW0409H04F,  Part #: 60-1001512-10)
+FE 1: Type fe600,  Version 1
+Switch Fabric Module 1 Up Time is 118 days 21 minutes 13 seconds 
+NI-X-HSF Switch Fabric Module 2 (Serial #: BEW0338F0BM,  Part #: 60-1001512-09)
+FE 1: Type fe600,  Version 1
+Switch Fabric Module 2 Up Time is 118 days 21 minutes 13 seconds 
+==========================================================================
+SL M1: NI-MLX-MR Management Module Active (Serial #: N00430G018, Part #:    35524-104A):
+Boot     : Version 5.6.0T165 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Sep 20 2013 at 16:42:38 labeled as xmprm05600
+ (516258 bytes) from boot flash
+Monitor  : Version 5.6.0T165 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Sep 20 2013 at 16:41:56 labeled as xmb05600
+ (534157 bytes) from code flash
+IronWare : Version 5.6.0dT163 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Jul 24 2014 at 22:51:20 labeled as xmr05600d
+ (9442445 bytes) from Primary
+Board ID : 00 MBRIDGE Revision : 37
+916 MHz Power PC processor 7447A (version 8003/0101) 166 MHz bus
+512 KB Boot Flash (MX29LV040C), 32 MB Code Flash (MT28F128J3)
+1024 MB DRAM INSTALLED
+1024 MB DRAM ADDRESSABLE
+Active Management uptime is 118 days 21 minutes 13 seconds 
+==========================================================================
+SL 1: NI-MLX-10Gx8-M 8-port 10GbE (M) Module (Serial #: BEQ0415J00N, Part #: 60-1001587-16)
+(LID: dgsFJGKlFFp)
+Boot     : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Sep 20 2013 at 16:43:00 labeled as xmlprm05600
+ (423373 bytes) from boot flash
+Monitor  : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Sep 20 2013 at 16:43:26 labeled as xmlb05600
+ (539767 bytes) from code flash
+IronWare : Version 5.6.0dT177 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Jul 24 2014 at 22:57:38 labeled as xmlp05600d
+ (7492178 bytes) from Primary
+FPGA versions: 
+Valid PBIF Version = 2.16, Build Time = 6/10/2014 11:47:00
+
+Valid XPP Version = 7.04, Build Time = 8/26/2013 9:57:00
+
+X10G2MAC 0
+X10G2MAC 1
+X10G2MAC 2
+X10G2MAC 3
+1333 MHz MPC 8541 (version 8021/0022) 533 MHz bus
+512 KB Boot Flash (MX29LV040C), 64 MB Code Flash (MT28F256J3)
+1024 MB DRAM, 8 KB SRAM, 286331153 Bytes BRAM
+LP Slot 1 uptime is 118 days 20 minutes 36 seconds 
+==========================================================================
+SL 2: NI-MLX-10Gx4 4-port 10GbE Module (Serial #: SA34090799, Part #: 35600-202D)
+Boot     : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Sep 20 2013 at 16:43:00 labeled as xmlprm05600
+ (423373 bytes) from boot flash
+Monitor  : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Sep 20 2013 at 16:43:26 labeled as xmlb05600
+ (539767 bytes) from code flash
+IronWare : Version 5.6.0dT177 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Jul 24 2014 at 22:57:38 labeled as xmlp05600d
+ (7492178 bytes) from Primary
+FPGA versions: 
+Valid PBIF Version = 4.02, Build Time = 8/26/2013 14:30:00
+
+Valid XPP Version = 1.01, Build Time = 9/6/2013 14:17:00
+
+Valid XGMAC Version = 0.15, Build Time = 10/14/2010 16:31:00
+
+X10G2MAC 0
+X10G2MAC 1
+666 MHz MPC 8541 (version 8020/0020) 333 MHz bus
+512 KB Boot Flash (AM29LV040B), 16 MB Code Flash (MT28F640J3)
+512 MB DRAM, 8 KB SRAM, 0 Bytes BRAM
+LP Slot 2 uptime is 118 days 20 minutes 32 seconds 
+==========================================================================
+SL 3: NI-MLX-1Gx20-SFP 20-port 1GbE-100FX Module (Serial #: T22634F0S6, Part #: 35604-152E)
+Boot     : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Sep 20 2013 at 16:43:00 labeled as xmlprm05600
+ (423373 bytes) from boot flash
+Monitor  : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Sep 20 2013 at 16:43:26 labeled as xmlb05600
+ (539767 bytes) from code flash
+IronWare : Version 5.6.0dT177 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.
+Compiled on Jul 24 2014 at 22:57:38 labeled as xmlp05600d
+ (7492178 bytes) from Primary
+FPGA versions: 
+Valid PBIF Version = 4.02, Build Time = 8/26/2013 14:30:00
+
+Valid XPP Version = 1.01, Build Time = 9/6/2013 14:17:00
+
+BCM5695GMAC 0
+BCM5695GMAC 1
+666 MHz MPC 8541 (version 8020/0020) 333 MHz bus
+512 KB Boot Flash (MX29LV040C), 16 MB Code Flash (MT28F640J3)
+512 MB DRAM, 8 KB SRAM, 286331153 Bytes BRAM
+LP Slot 3 uptime is 118 days 20 minutes 32 seconds 
+==========================================================================
+All show version done
+Brocade.NetIron.56d#
+
+
+
+/==================================\ 
+| Output of Command A - single cmd |
+\++++++++++++++++++++++++++++++++++/
+
+________________________________________________________________________________________________________
+LINE#0001: []
+LINE#0002: [Brocade.NetIron.56d#show ver]
+LINE#0003: [System Mode: MLX]
+LINE#0004: [Chassis: NetIron 4-slot (Serial #: A30538F08T,  Part #: 35550-000B)]
+LINE#0005: [NI-X-HSF Switch Fabric Module 1 (Serial #: BEW0409H04F,  Part #: 60-1001512-10)]
+LINE#0006: [FE 1: Type fe600,  Version 1]
+LINE#0007: [Switch Fabric Module 1 Up Time is 118 days 21 minutes 13 seconds]
+LINE#0008: [NI-X-HSF Switch Fabric Module 2 (Serial #: BEW0338F0BM,  Part #: 60-1001512-09)]
+LINE#0009: [FE 1: Type fe600,  Version 1]
+LINE#0010: [Switch Fabric Module 2 Up Time is 118 days 21 minutes 13 seconds]
+LINE#0011: [==========================================================================]
+LINE#0012: [SL M1: NI-MLX-MR Management Module Active (Serial #: N00430G018, Part #:    35524-104A):]
+LINE#0013: [Boot     : Version 5.6.0T165 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0014: [Compiled on Sep 20 2013 at 16:42:38 labeled as xmprm05600]
+LINE#0015: [ (516258 bytes) from boot flash]
+LINE#0016: [Monitor  : Version 5.6.0T165 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0017: [Compiled on Sep 20 2013 at 16:41:56 labeled as xmb05600]
+LINE#0018: [ (534157 bytes) from code flash]
+LINE#0019: [IronWare : Version 5.6.0dT163 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0020: [Compiled on Jul 24 2014 at 22:51:20 labeled as xmr05600d]
+LINE#0021: [ (9442445 bytes) from Primary]
+LINE#0022: [Board ID : 00 MBRIDGE Revision : 37]
+LINE#0023: [916 MHz Power PC processor 7447A (version 8003/0101) 166 MHz bus]
+LINE#0024: [512 KB Boot Flash (MX29LV040C), 32 MB Code Flash (MT28F128J3)]
+LINE#0025: [1024 MB DRAM INSTALLED]
+LINE#0026: [1024 MB DRAM ADDRESSABLE]
+LINE#0027: [Active Management uptime is 118 days 21 minutes 13 seconds]
+LINE#0028: [==========================================================================]
+LINE#0029: [SL 1: NI-MLX-10Gx8-M 8-port 10GbE (M) Module (Serial #: BEQ0415J00N, Part #: 60-1001587-16)]
+LINE#0030: [(LID: dgsFJGKlFFp)]
+LINE#0031: [Boot     : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0032: [Compiled on Sep 20 2013 at 16:43:00 labeled as xmlprm05600]
+LINE#0033: [ (423373 bytes) from boot flash]
+LINE#0034: [Monitor  : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0035: [Compiled on Sep 20 2013 at 16:43:26 labeled as xmlb05600]
+LINE#0036: [ (539767 bytes) from code flash]
+LINE#0037: [IronWare : Version 5.6.0dT177 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0038: [Compiled on Jul 24 2014 at 22:57:38 labeled as xmlp05600d]
+LINE#0039: [ (7492178 bytes) from Primary]
+LINE#0040: [FPGA versions:]
+LINE#0041: [Valid PBIF Version = 2.16, Build Time = 6/10/2014 11:47:00]
+LINE#0042: []
+LINE#0043: [Valid XPP Version = 7.04, Build Time = 8/26/2013 9:57:00]
+LINE#0044: []
+LINE#0045: [X10G2MAC 0]
+LINE#0046: [X10G2MAC 1]
+LINE#0047: [X10G2MAC 2]
+LINE#0048: [X10G2MAC 3]
+LINE#0049: [1333 MHz MPC 8541 (version 8021/0022) 533 MHz bus]
+LINE#0050: [512 KB Boot Flash (MX29LV040C), 64 MB Code Flash (MT28F256J3)]
+LINE#0051: [1024 MB DRAM, 8 KB SRAM, 286331153 Bytes BRAM]
+LINE#0052: [LP Slot 1 uptime is 118 days 20 minutes 36 seconds]
+LINE#0053: [==========================================================================]
+LINE#0054: [SL 2: NI-MLX-10Gx4 4-port 10GbE Module (Serial #: SA34090799, Part #: 35600-202D)]
+LINE#0055: [Boot     : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0056: [Compiled on Sep 20 2013 at 16:43:00 labeled as xmlprm05600]
+LINE#0057: [ (423373 bytes) from boot flash]
+LINE#0058: [Monitor  : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0059: [Compiled on Sep 20 2013 at 16:43:26 labeled as xmlb05600]
+LINE#0060: [ (539767 bytes) from code flash]
+LINE#0061: [IronWare : Version 5.6.0dT177 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0062: [Compiled on Jul 24 2014 at 22:57:38 labeled as xmlp05600d]
+LINE#0063: [ (7492178 bytes) from Primary]
+LINE#0064: [FPGA versions:]
+LINE#0065: [Valid PBIF Version = 4.02, Build Time = 8/26/2013 14:30:00]
+LINE#0066: []
+LINE#0067: [Valid XPP Version = 1.01, Build Time = 9/6/2013 14:17:00]
+LINE#0068: []
+LINE#0069: [Valid XGMAC Version = 0.15, Build Time = 10/14/2010 16:31:00]
+LINE#0070: []
+LINE#0071: [X10G2MAC 0]
+LINE#0072: [X10G2MAC 1]
+LINE#0073: [666 MHz MPC 8541 (version 8020/0020) 333 MHz bus]
+LINE#0074: [512 KB Boot Flash (AM29LV040B), 16 MB Code Flash (MT28F640J3)]
+LINE#0075: [512 MB DRAM, 8 KB SRAM, 0 Bytes BRAM]
+LINE#0076: [LP Slot 2 uptime is 118 days 20 minutes 32 seconds]
+LINE#0077: [==========================================================================]
+LINE#0078: [SL 3: NI-MLX-1Gx20-SFP 20-port 1GbE-100FX Module (Serial #: T22634F0S6, Part #: 35604-152E)]
+LINE#0079: [Boot     : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0080: [Compiled on Sep 20 2013 at 16:43:00 labeled as xmlprm05600]
+LINE#0081: [ (423373 bytes) from boot flash]
+LINE#0082: [Monitor  : Version 5.6.0T175 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0083: [Compiled on Sep 20 2013 at 16:43:26 labeled as xmlb05600]
+LINE#0084: [ (539767 bytes) from code flash]
+LINE#0085: [IronWare : Version 5.6.0dT177 Copyright (c) 1996-2013 Brocade Communications Systems, Inc.]
+LINE#0086: [Compiled on Jul 24 2014 at 22:57:38 labeled as xmlp05600d]
+LINE#0087: [ (7492178 bytes) from Primary]
+LINE#0088: [FPGA versions:]
+LINE#0089: [Valid PBIF Version = 4.02, Build Time = 8/26/2013 14:30:00]
+LINE#0090: []
+LINE#0091: [Valid XPP Version = 1.01, Build Time = 9/6/2013 14:17:00]
+LINE#0092: []
+LINE#0093: [BCM5695GMAC 0]
+LINE#0094: [BCM5695GMAC 1]
+LINE#0095: [666 MHz MPC 8541 (version 8020/0020) 333 MHz bus]
+LINE#0096: [512 KB Boot Flash (MX29LV040C), 16 MB Code Flash (MT28F640J3)]
+LINE#0097: [512 MB DRAM, 8 KB SRAM, 286331153 Bytes BRAM]
+LINE#0098: [LP Slot 3 uptime is 118 days 20 minutes 32 seconds]
+LINE#0099: [==========================================================================]
+LINE#0100: [All show version done]
+LINE#0101: [Brocade.NetIron.56d#]
+________________________________________________________________________________________________________
+
+
+Brocade.NetIron.56d#! configure eth1/8 with ip and enable
+Brocade.NetIron.56d#config term
+Brocade.NetIron.56d(config)#int eth 1/8
+Brocade.NetIron.56d(config-if-e10000-1/8)#ip address 192.168.1.1/24
+Error: Duplicate ip address
+Brocade.NetIron.56d(config-if-e10000-1/8)#enable
+Brocade.NetIron.56d(config-if-e10000-1/8)#end
+Brocade.NetIron.56d#
+Brocade.NetIron.56d#
+Brocade.NetIron.56d#
+
+
+
+/====================================\ 
+| Output of Command B - multiple cmd |
+\++++++++++++++++++++++++++++++++++++/
+
+________________________________________________________________________________
+LINE#0001: []
+LINE#0002: [Brocade.NetIron.56d#! configure eth1/8 with ip and enable]
+LINE#0003: [Brocade.NetIron.56d#config term]
+LINE#0004: [Brocade.NetIron.56d(config)#int eth 1/8]
+LINE#0005: [Brocade.NetIron.56d(config-if-e10000-1/8)#ip address 192.168.1.1/24]
+LINE#0006: [Error: Duplicate ip address]
+LINE#0007: [Brocade.NetIron.56d(config-if-e10000-1/8)#enable]
+LINE#0008: [Brocade.NetIron.56d(config-if-e10000-1/8)#end]
+LINE#0009: [Brocade.NetIron.56d#]
+LINE#0010: [Brocade.NetIron.56d#]
+LINE#0011: [Brocade.NetIron.56d#]
+________________________________________________________________________________
+
+show int brief wide | inc Up
+Port   Link     Port-State   Speed Tag MAC            Name
+1/1    Up       Forward      10G   Yes 001b.ed3b.8200 MCT ICL Link 1
+1/2    Up       Forward      10G   Yes 001b.ed3b.8200 MCT ICL Link 2
+1/4    Up       Forward      10G   No  001b.ed3b.8200 
+1/5    Up       Forward      10G   No  001b.ed3b.8204 
+1/6    Up       Forward      10G   No  001b.ed3b.8205 
+2/1    Up       Forward      10G   No  001b.ed3b.8230 lag to ADX1 link 1
+mgmt1  Up       Forward      1G    Yes 001b.ed3b.8200 
+Port   Link     Port-State   Speed Tag MAC            Name
+ve12   Up       N/A          N/A   N/A 001b.ed3b.8200 
+ve14   Up       N/A          N/A   N/A 001b.ed3b.8200 
+ve90   Up       N/A          N/A   N/A 001b.ed3b.8200 
+ve100  Up       N/A          N/A   N/A 001b.ed3b.8200 
+Port   Link     Port-State   Speed Tag MAC            Name
+lb1    Up       N/A          N/A   N/A N/A            
+Brocade.NetIron.56d#
+Brocade.NetIron.56d#
+
+
+
+/================================================\ 
+| Output of Command C - single cmd with pipeline |
+\++++++++++++++++++++++++++++++++++++++++++++++++/
+
+_____________________________________________________________________________________
+LINE#0001: [show int brief wide | inc Up]
+LINE#0002: [Port   Link     Port-State   Speed Tag MAC            Name]
+LINE#0003: [1/1    Up       Forward      10G   Yes 001b.ed3b.8200 MCT ICL Link 1]
+LINE#0004: [1/2    Up       Forward      10G   Yes 001b.ed3b.8200 MCT ICL Link 2]
+LINE#0005: [1/4    Up       Forward      10G   No  001b.ed3b.8200]
+LINE#0006: [1/5    Up       Forward      10G   No  001b.ed3b.8204]
+LINE#0007: [1/6    Up       Forward      10G   No  001b.ed3b.8205]
+LINE#0008: [2/1    Up       Forward      10G   No  001b.ed3b.8230 lag to ADX1 link 1]
+LINE#0009: [mgmt1  Up       Forward      1G    Yes 001b.ed3b.8200]
+LINE#0010: [Port   Link     Port-State   Speed Tag MAC            Name]
+LINE#0011: [ve12   Up       N/A          N/A   N/A 001b.ed3b.8200]
+LINE#0012: [ve14   Up       N/A          N/A   N/A 001b.ed3b.8200]
+LINE#0013: [ve90   Up       N/A          N/A   N/A 001b.ed3b.8200]
+LINE#0014: [ve100  Up       N/A          N/A   N/A 001b.ed3b.8200]
+LINE#0015: [Port   Link     Port-State   Speed Tag MAC            Name]
+LINE#0016: [lb1    Up       N/A          N/A   N/A N/A]
+LINE#0017: [Brocade.NetIron.56d#]
+LINE#0018: [Brocade.NetIron.56d#]
+_____________________________________________________________________________________
+

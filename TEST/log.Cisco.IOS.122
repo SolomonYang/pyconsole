@@ -1,0 +1,637 @@
+
+/================================\ 
+| Test cisco/ios via ssh.......  |
+\++++++++++++++++++++++++++++++++/
+
+Password: 
+
+Cisco-IOS-C3560G-24TS>enable
+Password: 
+Cisco-IOS-C3560G-24TS#terminal len 0
+Cisco-IOS-C3560G-24TS#skip
+Translating "skip"...domain server (255.255.255.255)
+% Unknown command or computer name, or unable to find computer address
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#show ver
+Cisco IOS Software, C3560 Software (C3560-IPSERVICESK9-M), Version 12.2(58)SE2, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2011 by Cisco Systems, Inc.
+Compiled Thu 21-Jul-11 01:44 by prod_rel_team
+
+ROM: Bootstrap program is C3560 boot loader
+BOOTLDR: C3560 Boot Loader (C3560-HBOOT-M) Version 12.2(44)SE5, RELEASE SOFTWARE (fc1)
+
+Cisco-IOS-C3560G-24TS uptime is 4 days, 2 hours, 44 minutes
+System returned to ROM by power-on
+System image file is "flash:/c3560-ipservicesk9-mz.122-58.SE2.bin"
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+cisco WS-C3560G-24TS (PowerPC405) processor (revision D0) with 131072K bytes of memory.
+Processor board ID FOC1342Y3WN
+Last reset from power-on
+5 Virtual Ethernet interfaces
+28 Gigabit Ethernet interfaces
+The password-recovery mechanism is enabled.
+
+512K bytes of flash-simulated non-volatile configuration memory.
+Base ethernet MAC Address       : F4:AC:C1:85:C0:00
+Motherboard assembly number     : 73-10215-04
+Power supply part number        : 341-0098-02
+Motherboard serial number       : FOC134256LA
+Power supply serial number      : DCA133592PN
+Model revision number           : D0
+Motherboard revision number     : D0
+Model number                    : WS-C3560G-24TS-S
+System serial number            : FOC1342Y3WN
+Top Assembly Part Number        : 800-26851-01
+Top Assembly Revision Number    : D0
+Version ID                      : V03
+CLEI Code Number                : CNMW200ARC
+Hardware Board Revision Number  : 0x09
+
+
+Switch Ports Model              SW Version            SW Image                 
+------ ----- -----              ----------            ----------               
+*    1 28    WS-C3560G-24TS     12.2(58)SE2           C3560-IPSERVICESK9-M     
+
+
+Configuration register is 0xF
+
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#
+
+
+
+/==================================\ 
+| Output of Command A - single cmd |
+\++++++++++++++++++++++++++++++++++/
+
+___________________________________________________________________________________________________________________
+LINE#0001: [show ver]
+LINE#0002: [Cisco IOS Software, C3560 Software (C3560-IPSERVICESK9-M), Version 12.2(58)SE2, RELEASE SOFTWARE (fc1)]
+LINE#0003: [Technical Support: http://www.cisco.com/techsupport]
+LINE#0004: [Copyright (c) 1986-2011 by Cisco Systems, Inc.]
+LINE#0005: [Compiled Thu 21-Jul-11 01:44 by prod_rel_team]
+LINE#0006: []
+LINE#0007: [ROM: Bootstrap program is C3560 boot loader]
+LINE#0008: [BOOTLDR: C3560 Boot Loader (C3560-HBOOT-M) Version 12.2(44)SE5, RELEASE SOFTWARE (fc1)]
+LINE#0009: []
+LINE#0010: [Cisco-IOS-C3560G-24TS uptime is 4 days, 2 hours, 44 minutes]
+LINE#0011: [System returned to ROM by power-on]
+LINE#0012: [System image file is "flash:/c3560-ipservicesk9-mz.122-58.SE2.bin"]
+LINE#0013: []
+LINE#0014: []
+LINE#0015: [This product contains cryptographic features and is subject to United]
+LINE#0016: [States and local country laws governing import, export, transfer and]
+LINE#0017: [use. Delivery of Cisco cryptographic products does not imply]
+LINE#0018: [third-party authority to import, export, distribute or use encryption.]
+LINE#0019: [Importers, exporters, distributors and users are responsible for]
+LINE#0020: [compliance with U.S. and local country laws. By using this product you]
+LINE#0021: [agree to comply with applicable laws and regulations. If you are unable]
+LINE#0022: [to comply with U.S. and local laws, return this product immediately.]
+LINE#0023: []
+LINE#0024: [A summary of U.S. laws governing Cisco cryptographic products may be found at:]
+LINE#0025: [http://www.cisco.com/wwl/export/crypto/tool/stqrg.html]
+LINE#0026: []
+LINE#0027: [If you require further assistance please contact us by sending email to]
+LINE#0028: [export@cisco.com.]
+LINE#0029: []
+LINE#0030: [cisco WS-C3560G-24TS (PowerPC405) processor (revision D0) with 131072K bytes of memory.]
+LINE#0031: [Processor board ID FOC1342Y3WN]
+LINE#0032: [Last reset from power-on]
+LINE#0033: [5 Virtual Ethernet interfaces]
+LINE#0034: [28 Gigabit Ethernet interfaces]
+LINE#0035: [The password-recovery mechanism is enabled.]
+LINE#0036: []
+LINE#0037: [512K bytes of flash-simulated non-volatile configuration memory.]
+LINE#0038: [Base ethernet MAC Address       : F4:AC:C1:85:C0:00]
+LINE#0039: [Motherboard assembly number     : 73-10215-04]
+LINE#0040: [Power supply part number        : 341-0098-02]
+LINE#0041: [Motherboard serial number       : FOC134256LA]
+LINE#0042: [Power supply serial number      : DCA133592PN]
+LINE#0043: [Model revision number           : D0]
+LINE#0044: [Motherboard revision number     : D0]
+LINE#0045: [Model number                    : WS-C3560G-24TS-S]
+LINE#0046: [System serial number            : FOC1342Y3WN]
+LINE#0047: [Top Assembly Part Number        : 800-26851-01]
+LINE#0048: [Top Assembly Revision Number    : D0]
+LINE#0049: [Version ID                      : V03]
+LINE#0050: [CLEI Code Number                : CNMW200ARC]
+LINE#0051: [Hardware Board Revision Number  : 0x09]
+LINE#0052: []
+LINE#0053: []
+LINE#0054: [Switch Ports Model              SW Version            SW Image]
+LINE#0055: [------ ----- -----              ----------            ----------]
+LINE#0056: [*    1 28    WS-C3560G-24TS     12.2(58)SE2           C3560-IPSERVICESK9-M]
+LINE#0057: []
+LINE#0058: []
+LINE#0059: [Configuration register is 0xF]
+LINE#0060: []
+LINE#0061: [Cisco-IOS-C3560G-24TS#]
+LINE#0062: [Cisco-IOS-C3560G-24TS#]
+___________________________________________________________________________________________________________________
+
+
+Cisco-IOS-C3560G-24TS#! configure eth1/8 with ip and enable
+Cisco-IOS-C3560G-24TS#config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+Cisco-IOS-C3560G-24T(config)#int g0/28
+Cisco-IOS-C3560G-24T(config-if)#ip address 192.168.1.1 255.255.255.0
+Cisco-IOS-C3560G-24T(config-if)#no shut
+Cisco-IOS-C3560G-24T(config-if)#end
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#
+
+
+
+/====================================\ 
+| Output of Command B - multiple cmd |
+\++++++++++++++++++++++++++++++++++++/
+
+_________________________________________________________________________________
+LINE#0001: []
+LINE#0002: [Cisco-IOS-C3560G-24TS#! configure eth1/8 with ip and enable]
+LINE#0003: [Cisco-IOS-C3560G-24TS#config term]
+LINE#0004: [Enter configuration commands, one per line.  End with CNTL/Z.]
+LINE#0005: [Cisco-IOS-C3560G-24T(config)#int g0/28]
+LINE#0006: [Cisco-IOS-C3560G-24T(config-if)#ip address 192.168.1.1 255.255.255.0]
+LINE#0007: [Cisco-IOS-C3560G-24T(config-if)#no shut]
+LINE#0008: [Cisco-IOS-C3560G-24T(config-if)#end]
+LINE#0009: [Cisco-IOS-C3560G-24TS#]
+LINE#0010: [Cisco-IOS-C3560G-24TS#]
+LINE#0011: [Cisco-IOS-C3560G-24TS#]
+_________________________________________________________________________________
+
+show ip int brief | inc up
+Vlan1                  10.17.145.23    YES NVRAM  up                    up      
+Vlan11                 10.152.5.2      YES NVRAM  up                    down    
+Vlan16                 10.250.3.3      YES NVRAM  up                    down    
+Vlan870                165.136.222.177 YES NVRAM  up                    down    
+Vlan1001               10.200.0.28     YES NVRAM  up                    down    
+GigabitEthernet0/24    unassigned      YES unset  up                    up      
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#
+
+
+
+/================================================\ 
+| Output of Command C - single cmd with pipeline |
+\++++++++++++++++++++++++++++++++++++++++++++++++/
+
+_____________________________________________________________________________________________
+LINE#0001: [show ip int brief | inc up]
+LINE#0002: [Vlan1                  10.17.145.23    YES NVRAM  up                    up]
+LINE#0003: [Vlan11                 10.152.5.2      YES NVRAM  up                    down]
+LINE#0004: [Vlan16                 10.250.3.3      YES NVRAM  up                    down]
+LINE#0005: [Vlan870                165.136.222.177 YES NVRAM  up                    down]
+LINE#0006: [Vlan1001               10.200.0.28     YES NVRAM  up                    down]
+LINE#0007: [GigabitEthernet0/24    unassigned      YES unset  up                    up]
+LINE#0008: [Cisco-IOS-C3560G-24TS#]
+LINE#0009: [Cisco-IOS-C3560G-24TS#]
+_____________________________________________________________________________________________
+
+
+/================================\ 
+| Test cisco/ios via telnet....  |
+\++++++++++++++++++++++++++++++++/
+Trying 10.17.145.23...
+Connected to 10.17.145.23.
+Escape character is '^]'.
+
+
+User Access Verification
+
+Username: 
+Username: 
+Username: test
+Password: 
+
+Cisco-IOS-C3560G-24TS>enable
+Password: 
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#terminal len 0
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#skip
+% Unknown command or computer name, or unable to find computer address
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#
+
+
+
+/==================================\ 
+| Output of Command A - single cmd |
+\++++++++++++++++++++++++++++++++++/
+
+___________________________________________________________________________________
+LINE#0001: [skip]
+LINE#0002: [% Unknown command or computer name, or unable to find computer address]
+LINE#0003: [Cisco-IOS-C3560G-24TS#]
+LINE#0004: [Cisco-IOS-C3560G-24TS#]
+___________________________________________________________________________________
+
+show ver
+Cisco IOS Software, C3560 Software (C3560-IPSERVICESK9-M), Version 12.2(58)SE2, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2011 by Cisco Systems, Inc.
+Compiled Thu 21-Jul-11 01:44 by prod_rel_team
+
+ROM: Bootstrap program is C3560 boot loader
+BOOTLDR: C3560 Boot Loader (C3560-HBOOT-M) Version 12.2(44)SE5, RELEASE SOFTWARE (fc1)
+
+Cisco-IOS-C3560G-24TS uptime is 4 days, 2 hours, 44 minutes
+System returned to ROM by power-on
+System image file is "flash:/c3560-ipservicesk9-mz.122-58.SE2.bin"
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+cisco WS-C3560G-24TS (PowerPC405) processor (revision D0) with 131072K bytes of memory.
+Processor board ID FOC1342Y3WN
+Last reset from power-on
+5 Virtual Ethernet interfaces
+28 Gigabit Ethernet interfaces
+The password-recovery mechanism is enabled.
+
+512K bytes of flash-simulated non-volatile configuration memory.
+Base ethernet MAC Address       : F4:AC:C1:85:C0:00
+Motherboard assembly number     : 73-10215-04
+Power supply part number        : 341-0098-02
+Motherboard serial number       : FOC134256LA
+Power supply serial number      : DCA133592PN
+Model revision number           : D0
+Motherboard revision number     : D0
+Model number                    : WS-C3560G-24TS-S
+System serial number            : FOC1342Y3WN
+Top Assembly Part Number        : 800-26851-01
+Top Assembly Revision Number    : D0
+Version ID                      : V03
+CLEI Code Number                : CNMW200ARC
+Hardware Board Revision Number  : 0x09
+
+
+Switch Ports Model              SW Version            SW Image                 
+------ ----- -----              ----------            ----------               
+*    1 28    WS-C3560G-24TS     12.2(58)SE2           C3560-IPSERVICESK9-M     
+
+
+Configuration register is 0xF
+
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#! configure eth1/8 with ip and enable
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#
+
+
+
+/====================================\ 
+| Output of Command B - multiple cmd |
+\++++++++++++++++++++++++++++++++++++/
+
+___________________________________________________________________________________________________________________
+LINE#0001: []
+LINE#0002: [Cisco-IOS-C3560G-24TS#]
+LINE#0003: [Cisco-IOS-C3560G-24TS#show ver]
+LINE#0004: [Cisco IOS Software, C3560 Software (C3560-IPSERVICESK9-M), Version 12.2(58)SE2, RELEASE SOFTWARE (fc1)]
+LINE#0005: [Technical Support: http://www.cisco.com/techsupport]
+LINE#0006: [Copyright (c) 1986-2011 by Cisco Systems, Inc.]
+LINE#0007: [Compiled Thu 21-Jul-11 01:44 by prod_rel_team]
+LINE#0008: []
+LINE#0009: [ROM: Bootstrap program is C3560 boot loader]
+LINE#0010: [BOOTLDR: C3560 Boot Loader (C3560-HBOOT-M) Version 12.2(44)SE5, RELEASE SOFTWARE (fc1)]
+LINE#0011: []
+LINE#0012: [Cisco-IOS-C3560G-24TS uptime is 4 days, 2 hours, 44 minutes]
+LINE#0013: [System returned to ROM by power-on]
+LINE#0014: [System image file is "flash:/c3560-ipservicesk9-mz.122-58.SE2.bin"]
+LINE#0015: []
+LINE#0016: []
+LINE#0017: [This product contains cryptographic features and is subject to United]
+LINE#0018: [States and local country laws governing import, export, transfer and]
+LINE#0019: [use. Delivery of Cisco cryptographic products does not imply]
+LINE#0020: [third-party authority to import, export, distribute or use encryption.]
+LINE#0021: [Importers, exporters, distributors and users are responsible for]
+LINE#0022: [compliance with U.S. and local country laws. By using this product you]
+LINE#0023: [agree to comply with applicable laws and regulations. If you are unable]
+LINE#0024: [to comply with U.S. and local laws, return this product immediately.]
+LINE#0025: []
+LINE#0026: [A summary of U.S. laws governing Cisco cryptographic products may be found at:]
+LINE#0027: [http://www.cisco.com/wwl/export/crypto/tool/stqrg.html]
+LINE#0028: []
+LINE#0029: [If you require further assistance please contact us by sending email to]
+LINE#0030: [export@cisco.com.]
+LINE#0031: []
+LINE#0032: [cisco WS-C3560G-24TS (PowerPC405) processor (revision D0) with 131072K bytes of memory.]
+LINE#0033: [Processor board ID FOC1342Y3WN]
+LINE#0034: [Last reset from power-on]
+LINE#0035: [5 Virtual Ethernet interfaces]
+LINE#0036: [28 Gigabit Ethernet interfaces]
+LINE#0037: [The password-recovery mechanism is enabled.]
+LINE#0038: []
+LINE#0039: [512K bytes of flash-simulated non-volatile configuration memory.]
+LINE#0040: [Base ethernet MAC Address       : F4:AC:C1:85:C0:00]
+LINE#0041: [Motherboard assembly number     : 73-10215-04]
+LINE#0042: [Power supply part number        : 341-0098-02]
+LINE#0043: [Motherboard serial number       : FOC134256LA]
+LINE#0044: [Power supply serial number      : DCA133592PN]
+LINE#0045: [Model revision number           : D0]
+LINE#0046: [Motherboard revision number     : D0]
+LINE#0047: [Model number                    : WS-C3560G-24TS-S]
+LINE#0048: [System serial number            : FOC1342Y3WN]
+LINE#0049: [Top Assembly Part Number        : 800-26851-01]
+LINE#0050: [Top Assembly Revision Number    : D0]
+LINE#0051: [Version ID                      : V03]
+LINE#0052: [CLEI Code Number                : CNMW200ARC]
+LINE#0053: [Hardware Board Revision Number  : 0x09]
+LINE#0054: []
+LINE#0055: []
+LINE#0056: [Switch Ports Model              SW Version            SW Image]
+LINE#0057: [------ ----- -----              ----------            ----------]
+LINE#0058: [*    1 28    WS-C3560G-24TS     12.2(58)SE2           C3560-IPSERVICESK9-M]
+LINE#0059: []
+LINE#0060: []
+LINE#0061: [Configuration register is 0xF]
+LINE#0062: []
+LINE#0063: [Cisco-IOS-C3560G-24TS#]
+LINE#0064: [Cisco-IOS-C3560G-24TS#]
+LINE#0065: [Cisco-IOS-C3560G-24TS#]
+LINE#0066: [Cisco-IOS-C3560G-24TS#]
+LINE#0067: [Cisco-IOS-C3560G-24TS#]
+LINE#0068: [Cisco-IOS-C3560G-24TS#! configure eth1/8 with ip and enable]
+LINE#0069: [Cisco-IOS-C3560G-24TS#]
+___________________________________________________________________________________________________________________
+
+config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+Cisco-IOS-C3560G-24T(config)#
+Cisco-IOS-C3560G-24T(config)#int g0/28
+Cisco-IOS-C3560G-24T(config-if)#
+Cisco-IOS-C3560G-24T(config-if)#ip address 192.168.1.1 255.255.255.0
+Cisco-IOS-C3560G-24T(config-if)#
+Cisco-IOS-C3560G-24T(config-if)#no shut
+Cisco-IOS-C3560G-24T(config-if)#
+Cisco-IOS-C3560G-24T(config-if)#end
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#show ip int brief | inc up
+Vlan1                  10.17.145.23    YES NVRAM  up                    up      
+Vlan11                 10.152.5.2      YES NVRAM  up                    down    
+Vlan16                 10.250.3.3      YES NVRAM  up                    down    
+Vlan870                165.136.222.177 YES NVRAM  up                    down    
+Vlan1001               10.200.0.28     YES NVRAM  up                    down    
+GigabitEthernet0/24    unassigned      YES unset  up                    up      
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#
+
+
+
+/================================================\ 
+| Output of Command C - single cmd with pipeline |
+\++++++++++++++++++++++++++++++++++++++++++++++++/
+
+__________________________________________________________________________
+LINE#0001: []
+LINE#0002: [Cisco-IOS-C3560G-24TS#config term]
+LINE#0003: [Enter configuration commands, one per line.  End with CNTL/Z.]
+LINE#0004: [Cisco-IOS-C3560G-24T(config)#]
+__________________________________________________________________________
+
+
+/================================\ 
+| Test cisco/ios via console...  |
+\++++++++++++++++++++++++++++++++/
+Trying 10.31.184.8...
+Connected to 10.31.184.8.
+Escape character is '^]'.
+
+
+
+
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#
+4d02h: %SYS-5-CONFIG_I: Configured from console by test on vty0 (10.17.138.102)terminal len 0
+Cisco-IOS-C3560G-24TS#skip
+Translating "skip"...domain server (255.255.255.255)
+% Unknown command or computer name, or unable to find computer address
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#sh
+
+
+
+/==================================\ 
+| Output of Command A - single cmd |
+\++++++++++++++++++++++++++++++++++/
+
+__________________________________________________________________________________________________________
+LINE#0001: []
+LINE#0002: [4d02h: %SYS-5-CONFIG_I: Configured from console by test on vty0 (10.17.138.102)terminal len 0]
+LINE#0003: [Cisco-IOS-C3560G-24TS#skip]
+LINE#0004: [Translating "skip"...domain server (255.255.255.255)]
+LINE#0005: [% Unknown command or computer name, or unable to find computer address]
+LINE#0006: [Cisco-IOS-C3560G-24TS#]
+__________________________________________________________________________________________________________
+
+ow ver
+Cisco IOS Software, C3560 Software (C3560-IPSERVICESK9-M), Version 12.2(58)SE2, RELEASE SOFTWARE (fc1)
+Technical Support: http://www.cisco.com/techsupport
+Copyright (c) 1986-2011 by Cisco Systems, Inc.
+Compiled Thu 21-Jul-11 01:44 by prod_rel_team
+
+ROM: Bootstrap program is C3560 boot loader
+BOOTLDR: C3560 Boot Loader (C3560-HBOOT-M) Version 12.2(44)SE5, RELEASE SOFTWARE (fc1)
+
+Cisco-IOS-C3560G-24TS uptime is 4 days, 2 hours, 44 minutes
+System returned to ROM by power-on
+System image file is "flash:/c3560-ipservicesk9-mz.122-58.SE2.bin"
+
+
+This product contains cryptographic features and is subject to United
+States and local country laws governing import, export, transfer and
+use. Delivery of Cisco cryptographic products does not imply
+third-party authority to import, export, distribute or use encryption.
+Importers, exporters, distributors and users are responsible for
+compliance with U.S. and local country laws. By using this product you
+agree to comply with applicable laws and regulations. If you are unable
+to comply with U.S. and local laws, return this product immediately.
+
+A summary of U.S. laws governing Cisco cryptographic products may be found at:
+http://www.cisco.com/wwl/export/crypto/tool/stqrg.html
+
+If you require further assistance please contact us by sending email to
+export@cisco.com.
+
+cisco WS-C3560G-24TS (PowerPC405) processor (revision D0) with 131072K bytes of memory.
+Processor board ID FOC1342Y3WN
+Last reset from power-on
+5 Virtual Ethernet interfaces
+28 Gigabit Ethernet interfaces
+The password-recovery mechanism is enabled.
+
+512K bytes of flash-simulated non-volatile configuration memory.
+Base ethernet MAC Address       : F4:AC:C1:85:C0:00
+Motherboard assembly number     : 73-10215-04
+Power supply part number        : 341-0098-02
+Motherboard serial number       : FOC134256LA
+Power supply serial number      : DCA133592PN
+Model revision number           : D0
+Motherboard revision number     : D0
+Model number                    : WS-C3560G-24TS-S
+System serial number            : FOC1342Y3WN
+Top Assembly Part Number        : 800-26851-01
+Top Assembly Revision Number    : D0
+Version ID                      : V03
+CLEI Code Number                : CNMW200ARC
+Hardware Board Revision Number  : 0x09
+
+
+Switch Ports Model              SW Version            SW Image                 
+------ ----- -----              ----------            ----------               
+*    1 28    WS-C3560G-24TS     12.2(58)SE2           C3560-IPSERVICESK9-M     
+
+
+Configuration register is 0xF
+
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#! configure eth1/8 with ip and enable
+Cisco-IOS-C3560G-24TS#config term
+Enter configuration commands, one per line.  End with CNTL/Z.
+Cisco-IOS-C3560G-24T(config)#int g0/28
+Cisco-IOS-C3560G-24T(config-if)#ip address 192.168.1.1 255.255.255.0
+Cisco-IOS-C3560G-24T(config-if)#no shut
+Cisco-IOS-C3560G-24T(config-if)#end
+Cisco-IOS-C3560G-24TS#
+
+
+
+/====================================\ 
+| Output of Command B - multiple cmd |
+\++++++++++++++++++++++++++++++++++++/
+
+___________________________________________________________________________________________________________________
+LINE#0001: []
+LINE#0002: [Cisco-IOS-C3560G-24TS#show ver]
+LINE#0003: [Cisco IOS Software, C3560 Software (C3560-IPSERVICESK9-M), Version 12.2(58)SE2, RELEASE SOFTWARE (fc1)]
+LINE#0004: [Technical Support: http://www.cisco.com/techsupport]
+LINE#0005: [Copyright (c) 1986-2011 by Cisco Systems, Inc.]
+LINE#0006: [Compiled Thu 21-Jul-11 01:44 by prod_rel_team]
+LINE#0007: []
+LINE#0008: [ROM: Bootstrap program is C3560 boot loader]
+LINE#0009: [BOOTLDR: C3560 Boot Loader (C3560-HBOOT-M) Version 12.2(44)SE5, RELEASE SOFTWARE (fc1)]
+LINE#0010: []
+LINE#0011: [Cisco-IOS-C3560G-24TS uptime is 4 days, 2 hours, 44 minutes]
+LINE#0012: [System returned to ROM by power-on]
+LINE#0013: [System image file is "flash:/c3560-ipservicesk9-mz.122-58.SE2.bin"]
+LINE#0014: []
+LINE#0015: []
+LINE#0016: [This product contains cryptographic features and is subject to United]
+LINE#0017: [States and local country laws governing import, export, transfer and]
+LINE#0018: [use. Delivery of Cisco cryptographic products does not imply]
+LINE#0019: [third-party authority to import, export, distribute or use encryption.]
+LINE#0020: [Importers, exporters, distributors and users are responsible for]
+LINE#0021: [compliance with U.S. and local country laws. By using this product you]
+LINE#0022: [agree to comply with applicable laws and regulations. If you are unable]
+LINE#0023: [to comply with U.S. and local laws, return this product immediately.]
+LINE#0024: []
+LINE#0025: [A summary of U.S. laws governing Cisco cryptographic products may be found at:]
+LINE#0026: [http://www.cisco.com/wwl/export/crypto/tool/stqrg.html]
+LINE#0027: []
+LINE#0028: [If you require further assistance please contact us by sending email to]
+LINE#0029: [export@cisco.com.]
+LINE#0030: []
+LINE#0031: [cisco WS-C3560G-24TS (PowerPC405) processor (revision D0) with 131072K bytes of memory.]
+LINE#0032: [Processor board ID FOC1342Y3WN]
+LINE#0033: [Last reset from power-on]
+LINE#0034: [5 Virtual Ethernet interfaces]
+LINE#0035: [28 Gigabit Ethernet interfaces]
+LINE#0036: [The password-recovery mechanism is enabled.]
+LINE#0037: []
+LINE#0038: [512K bytes of flash-simulated non-volatile configuration memory.]
+LINE#0039: [Base ethernet MAC Address       : F4:AC:C1:85:C0:00]
+LINE#0040: [Motherboard assembly number     : 73-10215-04]
+LINE#0041: [Power supply part number        : 341-0098-02]
+LINE#0042: [Motherboard serial number       : FOC134256LA]
+LINE#0043: [Power supply serial number      : DCA133592PN]
+LINE#0044: [Model revision number           : D0]
+LINE#0045: [Motherboard revision number     : D0]
+LINE#0046: [Model number                    : WS-C3560G-24TS-S]
+LINE#0047: [System serial number            : FOC1342Y3WN]
+LINE#0048: [Top Assembly Part Number        : 800-26851-01]
+LINE#0049: [Top Assembly Revision Number    : D0]
+LINE#0050: [Version ID                      : V03]
+LINE#0051: [CLEI Code Number                : CNMW200ARC]
+LINE#0052: [Hardware Board Revision Number  : 0x09]
+LINE#0053: []
+LINE#0054: []
+LINE#0055: [Switch Ports Model              SW Version            SW Image]
+LINE#0056: [------ ----- -----              ----------            ----------]
+LINE#0057: [*    1 28    WS-C3560G-24TS     12.2(58)SE2           C3560-IPSERVICESK9-M]
+LINE#0058: []
+LINE#0059: []
+LINE#0060: [Configuration register is 0xF]
+LINE#0061: []
+LINE#0062: [Cisco-IOS-C3560G-24TS#]
+LINE#0063: [Cisco-IOS-C3560G-24TS#]
+LINE#0064: [Cisco-IOS-C3560G-24TS#! configure eth1/8 with ip and enable]
+LINE#0065: [Cisco-IOS-C3560G-24TS#config term]
+LINE#0066: [Enter configuration commands, one per line.  End with CNTL/Z.]
+LINE#0067: [Cisco-IOS-C3560G-24T(config)#int g0/28]
+LINE#0068: [Cisco-IOS-C3560G-24T(config-if)#ip address 192.168.1.1 255.255.255.0]
+LINE#0069: [Cisco-IOS-C3560G-24T(config-if)#no shut]
+LINE#0070: [Cisco-IOS-C3560G-24T(config-if)#]
+___________________________________________________________________________________________________________________
+
+
+Cisco-IOS-C3560G-24TS#
+Cisco-IOS-C3560G-24TS#
+
+
+
+/================================================\ 
+| Output of Command C - single cmd with pipeline |
+\++++++++++++++++++++++++++++++++++++++++++++++++/
+
+___________________________________
+LINE#0001: [end]
+LINE#0002: [Cisco-IOS-C3560G-24TS#]
+LINE#0003: [Cisco-IOS-C3560G-24TS#]
+___________________________________
+
