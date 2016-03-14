@@ -1,4 +1,7 @@
 # pyconsole
+!!! pyconsole is obselected w/o any new development anymore!!!
+Please check my another project - pysession, which has a proper name - <PYthonSESSION>. The old name pyconsole makes people think that this module only support console :-)
+
 pyconsole is a python library leveraging pexpect to provide simplified interface to access multi-vendor network devices. 
 
 <b> __under development__ </b>
